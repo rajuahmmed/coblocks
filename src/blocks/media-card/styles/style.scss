@@ -136,6 +136,12 @@
 	}
 }
 
+//Improve responsive nature of the Media Card in TwentyNineteen.
+.is-twentynineteen {
+	.wp-block-coblocks-media-card {
+	}
+}
+
 //Fix background color contrast issue
 .is-twentynineteen {
 	.entry .entry-content {
