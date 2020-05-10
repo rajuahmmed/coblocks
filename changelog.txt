@@ -1,0 +1,1041 @@
+
+1.26.1 / 2020-05-04
+===================
+
+### Bug Fixes
+* Render a submit button if not found in the block content [#1479](https://github.com/godaddy-wordpress/coblocks/pull/1479)
+* Remove a condition where a variable may not be defined [#1477](https://github.com/godaddy-wordpress/coblocks/pull/1477)
+
+
+1.26.0 / 2020-04-30
+===================
+
+### Enhancements
+* Allow core/shortcode block in the Pricing Table block [#1465](https://github.com/godaddy-wordpress/coblocks/pull/1465)
+* Use columns/gutter utilities on the Pricing Table block [#1440](https://github.com/godaddy-wordpress/coblocks/pull/1440)
+* Only load front end CSS when it is needed [#1455](https://github.com/godaddy-wordpress/coblocks/pull/1455)
+
+### Bug Fixes
+* Maintain Masonry block gutter as browser viewport resizes [#1469](https://github.com/godaddy-wordpress/coblocks/pull/1469)
+* Propagate Hero alignment to children [#1463](https://github.com/godaddy-wordpress/coblocks/pull/1463)
+
+### Misc
+* Add form block e2e test to confirm emails are being sent [#1468](https://github.com/godaddy-wordpress/coblocks/pull/1468)
+* Improve keywords for icons [#1448](https://github.com/godaddy-wordpress/coblocks/pull/1448)
+
+
+1.25.0 / 2020-04-23
+===================
+
+### Enhancements
+* Improve logic to handle Accordion block open state [#1458](https://github.com/godaddy-wordpress/coblocks/pull/1458)
+* Introduce Vertical Alignment controls to Row block [#1437](https://github.com/godaddy-wordpress/coblocks/pull/1437)
+
+### Bug Fixes
+* Fix accordion display across IE/Edge browsers [#1456](https://github.com/godaddy-wordpress/coblocks/pull/1456)
+* Fix checkbox icon SVG to display properly [#1461](https://github.com/godaddy-wordpress/coblocks/pull/1461)
+* Fix Contact Form block submissions not sending [#1467](https://github.com/godaddy-wordpress/coblocks/pull/1467)
+* Fix Row block alignment bug with Go theme [#1459](https://github.com/godaddy-wordpress/coblocks/pull/1459)
+
+### Misc
+* Add proper example to the Pricing Table block [#1450](https://github.com/godaddy-wordpress/coblocks/pull/1450)
+* Deploy canary build to wpnux [#1452](https://github.com/godaddy-wordpress/coblocks/pull/1452)
+* Improve WP.org FAQs [#1464](https://github.com/godaddy-wordpress/coblocks/pull/1464)
+* Properly scope the datepicker to prevent conflicts [#1447](https://github.com/godaddy-wordpress/coblocks/pull/1447)
+* Refactor lightbox to remove jQuery requirement [#1429](https://github.com/godaddy-wordpress/coblocks/pull/1429)
+* Update CONTRIBUTORS.md [#1462](https://github.com/godaddy-wordpress/coblocks/pull/1462)
+
+
+1.24.0 / 2020-04-16
+===================
+
+### Enhancements
+* Improve Share block UX [#1433](https://github.com/godaddy-wordpress/coblocks/pull/1433)
+* Use column and gutter utility classes within the Food and Drinks block [#1384](https://github.com/godaddy-wordpress/coblocks/pull/1384)
+* Migrate the Form block's submit button to a child block [#1397](https://github.com/godaddy-wordpress/coblocks/pull/1397)
+* Introduce cross browser E2E testing [#1375](https://github.com/godaddy-wordpress/coblocks/pull/1375)
+
+### Bug Fixes
+* Fix duplicate classes with Posts block [#1443](https://github.com/godaddy-wordpress/coblocks/pull/1443)
+* Do not register if coblocksSettings is undefined [#1451](https://github.com/godaddy-wordpress/coblocks/pull/1451)
+* Fix Map block placeholder styles [#1442](https://github.com/godaddy-wordpress/coblocks/pull/1442)
+* Fix Icon block spacing when using custom links [#1430](https://github.com/godaddy-wordpress/coblocks/pull/1430)
+* Remove 100% height on front of site gallery carousels [#1436](https://github.com/godaddy-wordpress/coblocks/pull/1436)
+
+### Misc
+* Return class instance on register [#1444](https://github.com/godaddy-wordpress/coblocks/pull/1444)
+* Refactor gutter options functionality across blocks [#1445](https://github.com/godaddy-wordpress/coblocks/pull/1445)
+* Validate Composer configuration [#1388](https://github.com/godaddy-wordpress/coblocks/pull/1388)
+* Remove the options parameter passed into wp_json_encode [#1390](https://github.com/godaddy-wordpress/coblocks/pull/1390)
+* Fix variable type in coblocks_render_events_block [#1389](https://github.com/godaddy-wordpress/coblocks/pull/1389)
+* Update Canary release CircleCI deployment [#1431](https://github.com/godaddy-wordpress/coblocks/pull/1431)
+
+
+1.23.0 / 2020-03-19
+===================
+
+### Enhancements
+* Add 'Replace Image' button to core/image InspectorControls [#1385](https://github.com/godaddy-wordpress/coblocks/pull/1385)
+* Add Form block Text field [#1417](https://github.com/godaddy-wordpress/coblocks/pull/1417)
+* Introduce RTL support [#1420](https://github.com/godaddy-wordpress/coblocks/pull/1420)
+* Introduce a filter to disable the CoBlocks bundled SVG icons within the Icon Block [#1403](https://github.com/godaddy-wordpress/coblocks/pull/1403)
+* Remove jQuery from Form, Gif, Crop Settings [#1376](https://github.com/godaddy-wordpress/coblocks/pull/1376)
+* Show gallery image captions in lightbox [#1409](https://github.com/godaddy-wordpress/coblocks/pull/1409)
+
+### Bug Fixes
+* Clicking captions opens the lightbox [#1407](https://github.com/godaddy-wordpress/coblocks/pull/1407)
+* Fix Form block for Gutenberg 7.7 [#1419](https://github.com/godaddy-wordpress/coblocks/pull/1419)
+* Fix Map block error in editor + refactor wp.api global [#1411](https://github.com/godaddy-wordpress/coblocks/pull/1411)
+* Fix Posts and Post Carousel block categories control [#1406](https://github.com/godaddy-wordpress/coblocks/pull/1406)
+* Fix image and price toggle behavior on the Food and Drinks block [#1402](https://github.com/godaddy-wordpress/coblocks/pull/1402)
+* Fix selected font family option in the typography controls [#1404](https://github.com/godaddy-wordpress/coblocks/pull/1404)
+
+### Misc
+* Add CoBlocks icon to docs [#1412](https://github.com/godaddy-wordpress/coblocks/pull/1412)
+* Add docs for CoBlocks features [#1418](https://github.com/godaddy-wordpress/coblocks/pull/1418)
+* E2E Gauntlet Testing Script [#1415](https://github.com/godaddy-wordpress/coblocks/pull/1415)
+* Introduce E2E tests for CoBlocks Settings panel [#1395](https://github.com/godaddy-wordpress/coblocks/pull/1395)
+* Minor style specificity clean-up [#1424](https://github.com/godaddy-wordpress/coblocks/pull/1424)
+* Refactor form radio and checkbox labels [#1416](https://github.com/godaddy-wordpress/coblocks/pull/1416)
+* Tweak UI to support sentence case [#1414](https://github.com/godaddy-wordpress/coblocks/pull/1414)
+* Update Tested up to value to WordPress 5.4 [#1422](https://github.com/godaddy-wordpress/coblocks/pull/1422)
+* Update npm and composer development dependencies [#1413](https://github.com/godaddy-wordpress/coblocks/pull/1413)
+
+
+1.22.0 / 2020-03-04
+===================
+
+### Enhancements
+* Control Food Item block headings from the parent Food and Drinks block [#1381](https://github.com/godaddy-wordpress/coblocks/pull/1381)
+* Introduce 29 new icons into the icon block [#1398](https://github.com/godaddy-wordpress/coblocks/pull/1398)
+* Make the available Google Fonts filterable [#1386](https://github.com/godaddy-wordpress/coblocks/pull/1386)
+* Migrate Row block to variations API [#1372](https://github.com/godaddy-wordpress/coblocks/pull/1372)
+* Persist Accordion block open state when editing a post [#1393](https://github.com/godaddy-wordpress/coblocks/pull/1393)
+* Support new block collection functionality in WordPress 5.4 [#1367](https://github.com/godaddy-wordpress/coblocks/pull/1367)
+* WordPress 5.4 compatibility changes to CoBlocks [#1380](https://github.com/godaddy-wordpress/coblocks/pull/1380)
+
+### Bug Fixes
+* Conditionally enqueue slick.js for Events block [#1379](https://github.com/godaddy-wordpress/coblocks/pull/1379)
+* Fix Row block placeholder spacing [#1400](https://github.com/godaddy-wordpress/coblocks/pull/1400)
+
+### Misc
+* Add automated testing of block save functions [#1350](https://github.com/godaddy-wordpress/coblocks/pull/1350), [#1378](https://github.com/godaddy-wordpress/coblocks/pull/1378), [#1357](https://github.com/godaddy-wordpress/coblocks/pull/1357), [#1348](https://github.com/godaddy-wordpress/coblocks/pull/1348)
+* Callout Go as a companion theme in the readme [#1382](https://github.com/godaddy-wordpress/coblocks/pull/1382)
+* Update Form block variable names [#1373](https://github.com/godaddy-wordpress/coblocks/pull/1373)
+
+1.21.1 / 2020-02-20
+===================
+
+### Bug Fixes
+* Fix some images being completely black when filtered in the Logos block [#1358](https://github.com/godaddy-wordpress/coblocks/pull/1358)
+* Implement blockVariationPicker with Form block [#1355](https://github.com/godaddy-wordpress/coblocks/pull/1355)
+
+### Misc
+* Bring back one column variation to the Row block by popular demand [#1368](https://github.com/godaddy-wordpress/coblocks/pull/1368)
+* Add documentation for editor settings hooks [#1366](https://github.com/godaddy-wordpress/coblocks/pull/1366)
+* Move Features/Services HeadingToolbar controls to block toolbar [#1352](https://github.com/godaddy-wordpress/coblocks/pull/1352)
+
+1.21.0 / 2020-02-13
+===================
+
+### Enhancements
+* Add gutter support to Posts block [#1325](https://github.com/godaddy-wordpress/coblocks/pull/1325)
+* Add heading level control to Features block [#1309](https://github.com/godaddy-wordpress/coblocks/pull/1309)
+* Add styles to Post block featured images [#1315](https://github.com/godaddy-wordpress/coblocks/pull/1315)
+* Introduce CoBlocks editor settings panel [#1313](https://github.com/godaddy-wordpress/coblocks/pull/1313)
+* Migration from CGB to @wordpress/scripts [#1183](https://github.com/godaddy-wordpress/coblocks/pull/1183)
+* Remove one column option from the Row block [#1308](https://github.com/godaddy-wordpress/coblocks/pull/1308)
+* Replace ButtonGroup controls with OptionSelectorControl for improved UX [#1323](https://github.com/godaddy-wordpress/coblocks/pull/1323)
+
+### Bug Fixes
+* Don't translate date strings in the iCal parser [#1337](https://github.com/godaddy-wordpress/coblocks/pull/1337)
+* Ensure hero block custom classes are applied [#1335](https://github.com/godaddy-wordpress/coblocks/pull/1335)
+* Fix Gluten Free attribute display on Food & Drinks block [#1347](https://github.com/godaddy-wordpress/coblocks/pull/1347)
+* Fix Icon block reset button for improved i18n support [#1310](https://github.com/godaddy-wordpress/coblocks/pull/1310)
+* Fix block toolbar interactions within the Hero block [#1329](https://github.com/godaddy-wordpress/coblocks/pull/1329)
+* Fix gallery block custom link persistence [#1320](https://github.com/godaddy-wordpress/coblocks/pull/1320)
+* Fix navigation arrow position on Carousel block [#1353](https://github.com/godaddy-wordpress/coblocks/pull/1353)
+* Fix typo in the Stacked gallery block description [#1351](https://github.com/godaddy-wordpress/coblocks/pull/1351)
+* Reinitialize Flickity carousel when used inside an Accordion block [#1341](https://github.com/godaddy-wordpress/coblocks/pull/1341)
+* Skip empty values in generated styles from the DimensionsControl [#1333](https://github.com/godaddy-wordpress/coblocks/pull/1333)
+* Stack Buttons block on mobile [#1334](https://github.com/godaddy-wordpress/coblocks/pull/1334)
+
+### Misc
+* Add consistent labels [#1330](https://github.com/godaddy-wordpress/coblocks/pull/1330)
+* CI: Fix E2E job not finding WP-CLI binary [#1338](https://github.com/godaddy-wordpress/coblocks/pull/1338)
+* Fix WPCS error [#1311](https://github.com/godaddy-wordpress/coblocks/pull/1311)
+* Improve Author block stability through E2E testing [#1291](https://github.com/godaddy-wordpress/coblocks/pull/1291)
+* Improve Buttons block stability through E2E testing [#1293](https://github.com/godaddy-wordpress/coblocks/pull/1293)
+* Improve Click to Tweet block stability through E2E testing [#1295](https://github.com/godaddy-wordpress/coblocks/pull/1295)
+* Improve Dynamic HR block stability through E2E testing [#1296](https://github.com/godaddy-wordpress/coblocks/pull/1296)
+* Improve Events block stability through E2E testing [#1306](https://github.com/godaddy-wordpress/coblocks/pull/1306)
+* Improve Features block stability through E2E testing [#1274](https://github.com/godaddy-wordpress/coblocks/pull/1274)
+* Improve Food and Drinks block stability through E2E testing [#1278](https://github.com/godaddy-wordpress/coblocks/pull/1278)
+* Improve Form block stability through E2E testing [#1297](https://github.com/godaddy-wordpress/coblocks/pull/1297)
+* Improve Gallery Carousel block stability through E2E testing [#1265](https://github.com/godaddy-wordpress/coblocks/pull/1265)
+* Improve Gallery Collage block stability through E2E testing [#1266](https://github.com/godaddy-wordpress/coblocks/pull/1266)
+* Improve Gallery Masonry block stability through E2E testing [#1267](https://github.com/godaddy-wordpress/coblocks/pull/1267)
+* Improve Gallery Offset block stability through E2E testing [#1268](https://github.com/godaddy-wordpress/coblocks/pull/1268)
+* Improve Gallery Stacked block stability through E2E testing [#1269](https://github.com/godaddy-wordpress/coblocks/pull/1269)
+* Improve Gif block stability through E2E testing [#1289](https://github.com/godaddy-wordpress/coblocks/pull/1289)
+* Improve Gist block stability through E2E testing [#1288](https://github.com/godaddy-wordpress/coblocks/pull/1288)
+* Improve Hero block stability through E2E testing [#1287](https://github.com/godaddy-wordpress/coblocks/pull/1287)
+* Improve Icon block stability through E2E testing [#1298](https://github.com/godaddy-wordpress/coblocks/pull/1298)
+* Improve Logos block stability through E2E testing [#1286](https://github.com/godaddy-wordpress/coblocks/pull/1286)
+* Improve Map block stability through E2E testing [#1285](https://github.com/godaddy-wordpress/coblocks/pull/1285)
+* Improve Media Card block stability through E2E testing [#1284](https://github.com/godaddy-wordpress/coblocks/pull/1284)
+* Improve Post Carousel block stability through E2E testing [#1283](https://github.com/godaddy-wordpress/coblocks/pull/1283)
+* Improve Posts block stability through E2E testing [#1282](https://github.com/godaddy-wordpress/coblocks/pull/1282)
+* Improve Pricing Table block stability through E2E testing [#1273](https://github.com/godaddy-wordpress/coblocks/pull/1273)
+* Improve Row block stability through E2E testing [#1280](https://github.com/godaddy-wordpress/coblocks/pull/1280)
+* Improve Services block stability through E2E testing [#1279](https://github.com/godaddy-wordpress/coblocks/pull/1279)
+* Improve Shape Divider block stability through E2E testing [#1270](https://github.com/godaddy-wordpress/coblocks/pull/1270)
+* Improve Shape Divider style previews for WordPress 5.3 [#1111](https://github.com/godaddy-wordpress/coblocks/pull/1111)
+* Improve Share block stability through E2E testing [#1301](https://github.com/godaddy-wordpress/coblocks/pull/1301)
+* Improve Social Profiles block stability through E2E testing [#1304](https://github.com/godaddy-wordpress/coblocks/pull/1304)
+* Move pull request template [#1346](https://github.com/godaddy-wordpress/coblocks/pull/1346)
+* Rename pull-request-template to pull_request_template [#1345](https://github.com/godaddy-wordpress/coblocks/pull/1345)
+* Tweak attribute formatting for consistency [#1344](https://github.com/godaddy-wordpress/coblocks/pull/1344)
+* Update issue templates [#1342](https://github.com/godaddy-wordpress/coblocks/pull/1342)
+* Update plugin assets with new GoDaddy Branding [#1321](https://github.com/godaddy-wordpress/coblocks/pull/1321)
+* Use new banner on the README [#1343](https://github.com/godaddy-wordpress/coblocks/pull/1343)
+
+1.20.1 / 2020-01-23
+===================
+
+### Bug Fixes
+* Fix Slick carousel not being enqueued for the Events block
+* Fix block.json file missing for the Events block
+
+1.20.0 / 2020-01-23
+===================
+
+### Enhancements
+* Introduce the [Events block](https://github.com/godaddy-wordpress/coblocks/pull/883) 🎉
+* [Add support for Gutenberg 7.2](https://github.com/godaddy-wordpress/coblocks/pull/1272)
+* Tweak Map block ["Edit location" icon](https://github.com/godaddy-wordpress/coblocks/pull/1300)
+* [Refactor to use proper spacing utilities](https://github.com/godaddy-wordpress/coblocks/pull/1253)
+
+### Bug Fixes
+* Fix [template selector in the Form block](https://github.com/godaddy-wordpress/coblocks/pull/1292) when Gutenberg is active
+* [Explicitly pass the block type name](https://github.com/godaddy-wordpress/coblocks/pull/1302) when registering on the server side
+* Fix Gallery blocks when [uploading images](https://github.com/godaddy-wordpress/coblocks/pull/1262)
+* Fix [custom links added to images](https://github.com/godaddy-wordpress/coblocks/pull/1250) in the Offset Gallery block
+
+### Misc
+* [Remove typography controls](https://github.com/godaddy-wordpress/coblocks/pull/1299) from Features block
+* [Switch padding and margin](https://github.com/godaddy-wordpress/coblocks/pull/1281) DimensionsControls
+* [Remove Typography controls](https://github.com/godaddy-wordpress/coblocks/pull/1259) from the core Cover block
+* When the core/buttons block is registered, [migrate from the coblocks/buttons block](https://github.com/godaddy-wordpress/coblocks/pull/1241)
+* [Removed unused class](https://github.com/godaddy-wordpress/coblocks/pull/1271) from Accordion inspector
+* [Remove the enqueing of the utilities stylesheet](https://github.com/godaddy-wordpress/coblocks/pull/1260)
+* [Pass block name to custom class helper](https://github.com/godaddy-wordpress/coblocks/pull/1294)
+* [E2E Compatibility Refactor](https://github.com/godaddy-wordpress/coblocks/pull/1261)
+
+1.19.3 / 2020-01-09
+===================
+
+### Bug Fixes
+* Fix gallery blocks not rendering properly within the editor
+
+1.19.2 / 2020-01-09
+===================
+
+### Bug Fixes
+* Fix the [Form block template selector](https://github.com/godaddy-wordpress/coblocks/pull/1232) when the Gutenberg plugin is active
+* Fix issue where [gallery captions were resetting](https://github.com/godaddy-wordpress/coblocks/pull/1243)
+* Fix [custom links added to images](https://github.com/godaddy-wordpress/coblocks/pull/1239) in the Offset Gallery block
+
+### Misc
+* [Replace legacy "editor-" classes](https://github.com/godaddy-wordpress/coblocks/pull/1242) with "block-editor-"
+* Use the new InnerBlocks [renderAppender on the Row block](https://github.com/godaddy-wordpress/coblocks/pull/1244)
+* Break [each icon keyword into its own i18n wrapper](https://github.com/godaddy-wordpress/coblocks/pull/1225)
+* [Add change log contents to GitHub release notes](https://github.com/godaddy-wordpress/coblocks/pull/1240)
+* [Add media-card block transform tests](https://github.com/godaddy-wordpress/coblocks/pull/1218)
+
+1.19.1 / 2019-12-20
+===================
+
+### Bug Fixes
+* [Resolve 404 error](https://github.com/godaddy-wordpress/coblocks/pull/1219) for utility styles
+* Update PHPUnit tests to [check for build assets](https://github.com/godaddy-wordpress/coblocks/pull/1222)
+* [Remove has-custom-size class](https://github.com/godaddy-wordpress/coblocks/pull/1223) from Typography Controls
+* Add [utility script that audits i18n strings against a wporg glossary](https://github.com/godaddy-wordpress/coblocks/pull/1224)
+
+1.19.0 / 2019-12-19
+===================
+
+### Enhancements
+* Introduce the ability for [themes to provide custom icons](https://github.com/godaddy-wordpress/coblocks/pull/1006) for the Icon block
+* Introduce a filter to [conditionally disable the typography controls](https://github.com/godaddy-wordpress/coblocks/pull/987)
+* Introduce filter to [conditionally load block styles](https://github.com/godaddy-wordpress/coblocks/pull/1173)
+
+### Bug Fixes
+* Fix [media placeholder visibility when using Spotlight mode](https://github.com/godaddy-wordpress/coblocks/pull/1208)
+* Fix display issue with [Flickity navigation buttons](https://github.com/godaddy-wordpress/coblocks/pull/1204)
+* Resolve browser [Object.fromEntries compatibility errors](https://github.com/godaddy-wordpress/coblocks/pull/1205)
+* Use [background image SVGs](https://github.com/godaddy-wordpress/coblocks/pull/1171) for the Food & Drinks block item attributes
+* [Serve full size images](https://github.com/godaddy-wordpress/coblocks/pull/1178) with Post Carousel block
+* [Allow editing gallery captions without content](https://github.com/godaddy-wordpress/coblocks/pull/1180)
+* [Localize instructions string for MediaPlaceholder](https://github.com/godaddy-wordpress/coblocks/pull/1179)
+
+### Misc
+* [Clean up code structure of the Row block](https://github.com/godaddy-wordpress/coblocks/pull/1037)
+* [Improve Features block stability through transforms testing](https://github.com/godaddy-wordpress/coblocks/pull/1189)
+* [Improve Dynamic Separator block stability through transforms testing](https://github.com/godaddy-wordpress/coblocks/pull/1188)
+* [Improve Gist block stability through transforms testing](https://github.com/godaddy-wordpress/coblocks/pull/1187)
+* [Improve Buttons block stability through transforms testing](https://github.com/godaddy-wordpress/coblocks/pull/1186)
+* [Improve Author block stability through transforms testing](https://github.com/godaddy-wordpress/coblocks/pull/1185)
+* [Improve Click-to-Tweet block stability through transforms testing](https://github.com/godaddy-wordpress/coblocks/pull/1184)
+* [Improve Alert block stability through transforms testing](https://github.com/godaddy-wordpress/coblocks/pull/1182)
+* [Improve Accordion block stability through transforms testing](https://github.com/godaddy-wordpress/coblocks/pull/1181)
+
+
+1.18.0 / 2019-12-05
+===================
+
+### Enhancements
+* Introduce [Offset Gallery](https://github.com/godaddy-wordpress/coblocks/pull/1144) block 🎉
+* Allow [dynamic subject lines](https://github.com/godaddy-wordpress/coblocks/pull/1017) with Form block submissions
+* Use consistent [styling for the next and previous](https://github.com/godaddy-wordpress/coblocks/pull/1166) buttons in the Carousel block and Lightbox
+* Add [keyboard shortcuts](https://github.com/godaddy-wordpress/coblocks/pull/1170) for navigating images in a lightbox
+* Introduce [end-to-end testing](https://github.com/godaddy-wordpress/coblocks/pull/1139) using Cypress
+* Add [Lightbox functionality to the Carousel block](https://github.com/godaddy-wordpress/coblocks/pull/1165)
+* [Remove minimum height limitation](https://github.com/godaddy-wordpress/coblocks/pull/1167) on the Carousel block
+* New shared component: [Option Selector Control](https://github.com/godaddy-wordpress/coblocks/pull/1163)
+* Add [Form block layout templates](https://github.com/godaddy-wordpress/coblocks/pull/1128)
+
+### Bug Fixes
+* Use [descriptive element name](https://github.com/godaddy-wordpress/coblocks/pull/1023) for Form block radio buttons
+
+### Misc
+* [Cleanup CoBlocks options](https://github.com/godaddy-wordpress/coblocks/pull/1172) from database on uninstall
+* [Generate translation files on master changes](https://github.com/godaddy-wordpress/coblocks/pull/1164)
+* [Create CONTRIBUTORS.md](https://github.com/godaddy-wordpress/coblocks/pull/1158)
+* Update links to point at the [GoDaddy WordPress GitHub Organization](https://github.com/godaddy-wordpress/coblocks/pull/1159)
+* Update [contributor callout](https://github.com/godaddy-wordpress/coblocks/pull/1126) on README
+
+
+1.17.3 / 2019-11-21
+===================
+
+### Enhancements
+* [Update Gallery blocks](https://github.com/godaddy-wordpress/coblocks/pull/1142) to use core UX patterns
+* [Hide avatar placeholder](https://github.com/godaddy-wordpress/coblocks/pull/1074) on Author block when not in use
+* Add [top and bottom wave style](https://github.com/godaddy-wordpress/coblocks/pull/1123) to core Cover block
+* Add [lightbox support to the Collage block](https://github.com/godaddy-wordpress/coblocks/pull/1141)
+
+### Bug Fixes
+* Explicitly set block classnames instead of using the generated className prop ([#1152](https://github.com/godaddy-wordpress/coblocks/pull/1152) and [#1150](https://github.com/godaddy-wordpress/coblocks/pull/1150))
+* Allow fields to have identical [display labels](https://github.com/godaddy-wordpress/coblocks/pull/1146)
+* Ensure avatar image [styles override core styles](https://github.com/godaddy-wordpress/coblocks/pull/1137)
+* Ensure all __() functions [use a text domain](https://github.com/godaddy-wordpress/coblocks/pull/1135)
+
+### Misc
+* [Remove excess admin styles from src](https://github.com/godaddy-wordpress/coblocks/pull/1118)
+* [Update example images](https://github.com/godaddy-wordpress/coblocks/pull/1134) to use those from WordPress core
+* Update [classes used in editor styling](https://github.com/godaddy-wordpress/coblocks/pull/1138) for consistency
+* [Remove CoBlocks Block Manager](https://github.com/godaddy-wordpress/coblocks/pull/1110)
+* [Remove unused constant](https://github.com/godaddy-wordpress/coblocks/pull/1148)
+* [Ignore externals on `svn co`](https://github.com/godaddy-wordpress/coblocks/pull/1147)
+
+1.17.2 / 2019-11-14
+===================
+
+### Enhancements
+* [Replace Media Card block MediaPlaceholder icon](https://github.com/godaddy-wordpress/coblocks/pull/1125) with image/video icon
+* [Remove](https://github.com/godaddy-wordpress/coblocks/pull/1124) unused example images
+* [Replace](https://github.com/godaddy-wordpress/coblocks/pull/1119) ... with horizontal ellipsis (…)
+
+### Bug Fixes
+* Fix [posts block render loop](https://github.com/godaddy-wordpress/coblocks/pull/1131)
+* Fix [posts grid not displaying as columns](https://github.com/godaddy-wordpress/coblocks/pull/1127)
+
+1.17.1 / 2019-11-12
+===================
+
+### Bug Fixes
+* Add server rendered [block's json files](https://github.com/godaddy-wordpress/coblocks/pull/1121) to build
+* Use external [Wikipedia CC licensed images](https://github.com/godaddy-wordpress/coblocks/pull/1106) in block examples
+
+1.17.0 / 2019-11-11
+===================
+
+### Features
+* Add [support for WordPress 5.3](https://github.com/godaddy-wordpress/coblocks/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+label%3A%22wp+5.3%22)
+* Add [support for the TwentyTwenty theme](https://github.com/godaddy-wordpress/coblocks/pulls?q=is%3Apr+is%3Aclosed+label%3A%22%5BTheme%5D+2020%22)
+* Introduce [Select Form block](https://github.com/godaddy-wordpress/coblocks/pull/1072) field
+* Introduce [Checkbox Form block](https://github.com/godaddy-wordpress/coblocks/pull/1072) field
+* Introduce [Website Form block](https://github.com/godaddy-wordpress/coblocks/pull/1072) field
+* Introduce [Hidden Form block](https://github.com/godaddy-wordpress/coblocks/pull/1072) field
+
+### Enhancements
+* Add [block movers](https://github.com/godaddy-wordpress/coblocks/pull/1100) to Pricing Table items
+* Tweak [Dynamic HR styling](https://github.com/godaddy-wordpress/coblocks/pull/1109) for TwentyTwenty
+* [Remove CoBlocks getting started guide](https://github.com/godaddy-wordpress/coblocks/pull/1097)
+* Ensure [SVGs which provide additional context are accessible](https://github.com/godaddy-wordpress/coblocks/pull/1098)
+* [Improve translation](https://github.com/godaddy-wordpress/coblocks/pull/1102) support
+* Bump WordPress [Core support to 5.3](https://github.com/godaddy-wordpress/coblocks/pull/1065)
+* Add [translatable default values](https://github.com/godaddy-wordpress/coblocks/pull/1101) for the Form block and fields
+* Tweak [VisualDropdown component styling](https://github.com/godaddy-wordpress/coblocks/pull/1096) for WordPress 5.3
+* Tweak [DimensionsControl component styling](https://github.com/godaddy-wordpress/coblocks/pull/1056) for WordPress 5.3
+* Allow [theme colors in Row block](https://github.com/godaddy-wordpress/coblocks/pull/1055) placeholder
+* Add [block preview for Collage Gallery](https://github.com/godaddy-wordpress/coblocks/pull/1071) block
+* Use BlockIcon component for [Placeholder Icons](https://github.com/godaddy-wordpress/coblocks/pull/1085)
+* [Enable certain core blocks in the form block](https://github.com/godaddy-wordpress/coblocks/pull/1091)
+* [Improve UX of Author block text placeholders](https://github.com/godaddy-wordpress/coblocks/pull/1076)
+* Enhance [DimensionsControls with vw and vh](https://github.com/godaddy-wordpress/coblocks/pull/1087) units
+* [Clean up Gist block toolbar](https://github.com/godaddy-wordpress/coblocks/pull/1089)
+* Switch [i18n string management to a JSON-based system](https://github.com/godaddy-wordpress/coblocks/pull/1073)
+* Improve [Posts block stability](https://github.com/godaddy-wordpress/coblocks/pull/1069) through block validation testing
+* Improve [Collage Gallery block stability](https://github.com/godaddy-wordpress/coblocks/pull/1075) through block validation testing
+* Improve [Post Carousel block stability](https://github.com/godaddy-wordpress/coblocks/pull/1070) through block validation testing
+* Improve [Social Profiles block stability](https://github.com/godaddy-wordpress/coblocks/pull/1057) through block validation testing
+* Improve [Share block stability](https://github.com/godaddy-wordpress/coblocks/pull/1059) through block validation testing
+* Improve [Shape Divider block stability](https://github.com/godaddy-wordpress/coblocks/pull/1060) through block validation testing
+* Improve [Services block stability](https://github.com/godaddy-wordpress/coblocks/pull/1034) through block validation testing
+* Improve [Row block stability](https://github.com/godaddy-wordpress/coblocks/pull/1032) through block validation testing
+* Use [number input for height controls](https://github.com/godaddy-wordpress/coblocks/pull/1013) Carousel block
+* [Replace "Cheating Huh?"](https://github.com/godaddy-wordpress/coblocks/pull/1042) with a less insulting message
+* Add TwentyTwenty as an [auto-generated theme classes](https://github.com/godaddy-wordpress/coblocks/pull/1078)
+* Update code style for the [latest WordPress Core Guidelines](https://github.com/godaddy-wordpress/coblocks/pull/1113)
+
+### Bug Fixes
+* [Use string name](https://github.com/godaddy-wordpress/coblocks/pull/1115) in server side rendered block registration
+* Fix Grunt build issues (https://github.com/godaddy-wordpress/coblocks/pull/1114)
+* Fix [label position on Gutter and Thumbnail](https://github.com/godaddy-wordpress/coblocks/pull/1112) size controls
+* [Remove custom colors panel](https://github.com/godaddy-wordpress/coblocks/pull/1108) from Heading block
+* [Add proper !important styles](https://github.com/godaddy-wordpress/coblocks/pull/1107) for the advanced top/bottom margin
+* Use the [jQuery global to avoid script conflicts](https://github.com/godaddy-wordpress/coblocks/pull/1038) with Gif block
+* Fix code [display styles of the Gist block](https://github.com/godaddy-wordpress/coblocks/pull/1066) with the TwentyTwenty theme
+* [Improve the column control](https://github.com/godaddy-wordpress/coblocks/pull/1084) of the Posts and Post Carousel blocks
+* Remove preview [example for the Shape Divider](https://github.com/godaddy-wordpress/coblocks/pull/1077) block
+* [Replace _x() with __()](https://github.com/godaddy-wordpress/coblocks/pull/1094) translation functions due to unexpected bug in Core
+* Tweak [Accordion block default background color](https://github.com/godaddy-wordpress/coblocks/pull/1095) for improved theme compatibility
+* Fix [Collage Block layouts](https://github.com/godaddy-wordpress/coblocks/pull/1067) for the TwentyTwenty theme
+* [Scope column styles](https://github.com/godaddy-wordpress/coblocks/pull/1035) to the Posts block
+
+1.16.1 / 2019-10-18
+===================
+
+### Bug Fixes
+* Ensure [translations are loaded](https://github.com/godaddy-wordpress/coblocks/pull/1024) in the Block Editor
+* Use [COBLOCKS_VERSION](https://github.com/godaddy-wordpress/coblocks/pull/1025) when registering scripts
+
+1.16.0 / 2019-10-17
+===================
+
+### Features
+* Add new [radio, phone, and date picker fields](https://github.com/godaddy-wordpress/coblocks/pull/969) to the Form block
+* Add new [Post Carousel block](https://github.com/godaddy-wordpress/coblocks/pull/966) to display a slideshow of blog posts
+* Add new [Posts block](https://github.com/godaddy-wordpress/coblocks/pull/736) to display blogroll or RSS feed posts
+* Add new ["Popular" menu item option](https://github.com/godaddy-wordpress/coblocks/pull/958) to the Food and Drinks block
+* Add the [Reply-To header to emails](https://github.com/godaddy-wordpress/coblocks/pull/953) sent from the Form block
+
+### Enhancements
+* [Improve placeholder text](https://github.com/godaddy-wordpress/coblocks/pull/1007) in the Accordion block
+* [Remove allowedBlocks limitation](https://github.com/godaddy-wordpress/coblocks/pull/939) from the Accordion Item
+* Improve the Map block [Google Maps API key UX](https://github.com/godaddy-wordpress/coblocks/pull/974)
+* Add [local language support](https://github.com/godaddy-wordpress/coblocks/pull/964) for Map block
+* Add [missing responsive margin/padding units](https://github.com/godaddy-wordpress/coblocks/pull/543) to Hero and Column blocks
+* Fix translations and add i18n generation to build process ([#1012](https://github.com/godaddy-wordpress/coblocks/pull/1012), [#1005](https://github.com/godaddy-wordpress/coblocks/pull/1005), [#982](https://github.com/godaddy-wordpress/coblocks/pull/982))
+* [Tag each release of CoBlocks](https://github.com/godaddy-wordpress/coblocks/pull/949) on the WordPress.org SVN during deployment
+* Improve [Pricing Table block stability](https://github.com/godaddy-wordpress/coblocks/pull/1003) through block validation testing
+* Improve [Media Card block stability](https://github.com/godaddy-wordpress/coblocks/pull/1002) through block validation testing
+* Improve [Map block stability](https://github.com/godaddy-wordpress/coblocks/pull/1001) through block validation testing
+* Improve [Logos block stability](https://github.com/godaddy-wordpress/coblocks/pull/1000) through block validation testing
+* Improve [Icon block stability](https://github.com/godaddy-wordpress/coblocks/pull/999) through block validation testing
+* Improve [Gist block stability](https://github.com/godaddy-wordpress/coblocks/pull/998) through block validation testing
+* Improve [Gif block stability](https://github.com/godaddy-wordpress/coblocks/pull/997) through block validation testing
+* Improve [Form block stability](https://github.com/godaddy-wordpress/coblocks/pull/962) through block validation testing
+* Improve [Carousel Gallery block stability](https://github.com/godaddy-wordpress/coblocks/pull/968) through block validation testing
+* Improve [Masonry Gallery block stability](https://github.com/godaddy-wordpress/coblocks/pull/967) through block validation testing
+* Improve [Stacked Gallery block stability](https://github.com/godaddy-wordpress/coblocks/pull/965) through block validation testing
+* Improve [Food and Drinks block stability](https://github.com/godaddy-wordpress/coblocks/pull/961) through block validation testing
+* Improve [Features block stability](https://github.com/godaddy-wordpress/coblocks/pull/960) through block validation testing
+* Improve [Dynamic Separator block stability](https://github.com/godaddy-wordpress/coblocks/pull/959) through block validation testing
+* Improve [Click to Tweet block stability](https://github.com/godaddy-wordpress/coblocks/pull/956) through block validation testing
+* Improve [Button block stability](https://github.com/godaddy-wordpress/coblocks/pull/955) through block validation testing
+* Improve [Author block stability](https://github.com/godaddy-wordpress/coblocks/pull/952) through block validation testing
+* Improve [Accordion block stability](https://github.com/godaddy-wordpress/coblocks/pull/957) through block validation testing
+* Improve [Alert block stability](https://github.com/godaddy-wordpress/coblocks/pull/951) through block validation testing
+* Improve deprecation tests by [exposing actionable information](https://github.com/godaddy-wordpress/coblocks/pull/970)
+* Update ES module [imports for testing](https://github.com/godaddy-wordpress/coblocks/pull/948)
+* Run eslint and jest tests for [staged files pre-commit](https://github.com/godaddy-wordpress/coblocks/pull/942)
+* [Remove "Leave a Review" feedback notice](https://github.com/godaddy-wordpress/coblocks/pull/993)
+* [Remove unused ResizableSpacer component](https://github.com/godaddy-wordpress/coblocks/pull/978)
+* Convert Map block [height slider control to number input](https://github.com/godaddy-wordpress/coblocks/pull/977)
+* Add a [CODEOWNERS file for GitHub](https://github.com/godaddy-wordpress/coblocks/pull/971) to provide better reviewer suggestions
+* [Remove development source files from the plugin](https://github.com/godaddy-wordpress/coblocks/pull/963)
+* [Add PHP development dependencies with composer](https://github.com/godaddy-wordpress/coblocks/pull/988)
+
+### Bug Fixes
+* Ensure image [placeholders maintain aspect ratio](https://github.com/godaddy-wordpress/coblocks/pull/1014) of the selected style
+* Fix the block validation error when the [Hero block background color is removed](https://github.com/godaddy-wordpress/coblocks/pull/995)
+* Resolve [PHP warnings](https://github.com/godaddy-wordpress/coblocks/pull/985) with WordPress 5.3 Beta
+* Fix [links opening in a new tab](https://github.com/godaddy-wordpress/coblocks/pull/1008) in the Icon block
+* Add ['0' as a valid value](https://github.com/godaddy-wordpress/coblocks/pull/726) for the Dimensions Control
+* Fix [missing viewBox values](https://github.com/godaddy-wordpress/coblocks/pull/990) on block icons
+* Do not [show layout styles toolbar](https://github.com/godaddy-wordpress/coblocks/pull/994) until a layout is selected
+* Ensure [style previews of the Icon block](https://github.com/godaddy-wordpress/coblocks/pull/996) display the selected icon
+* Fix [image links being erased](https://github.com/godaddy-wordpress/coblocks/pull/984) when a Gallery block is updated
+* [Fix deprecation for the CoBlocks Block Manager](https://github.com/godaddy-wordpress/coblocks/pull/989)
+* Resolve missing text format controls because of [missing script dependencies](https://github.com/godaddy-wordpress/coblocks/pull/986)
+* Prevent [systems fonts](https://github.com/godaddy-wordpress/coblocks/pull/976) from attempting to load from Google Fonts
+* [Fix Media Card block icon](https://github.com/godaddy-wordpress/coblocks/pull/973)
+* [Prevent our BlockManager from loading](https://github.com/godaddy-wordpress/coblocks/pull/972) if Core's exist
+* [Add icon to Map block placeholder](https://github.com/godaddy-wordpress/coblocks/pull/946)
+* Remove unnecessary statement within [deployment scripts](https://github.com/godaddy-wordpress/coblocks/pull/954)
+
+1.15.0 / 2019-10-03
+===================
+
+### Features
+* Add [new Collage Gallery](https://github.com/godaddy-wordpress/coblocks/pull/907) block
+* Add [new CSS utility classes](https://github.com/godaddy-wordpress/coblocks/pull/941) to enable better design integration with themes
+* Add [new thumbnail navigation and responsive height controls](https://github.com/godaddy-wordpress/coblocks/pull/839) to the Carousel block
+* Add [new lightbox support](https://github.com/godaddy-wordpress/coblocks/pull/840) to Masonry and Stacked gallery blocks
+
+### Enhancements
+* Improve the [experience of the Map block](https://github.com/godaddy-wordpress/coblocks/pull/936) when applying an address
+* [Remove redirect](https://github.com/godaddy-wordpress/coblocks/pull/925) to plugin's admin page when activating CoBlocks
+* Convert [Alert block text alignment](https://github.com/godaddy-wordpress/coblocks/pull/880) setting to use utility classes
+* Convert [Click-to-Tweet block text alignment](https://github.com/godaddy-wordpress/coblocks/pull/881) setting to use utility classes
+* Convert [Pricing Table block text alignment](https://github.com/godaddy-wordpress/coblocks/pull/882) setting to use utility classes
+* Convert [Row block text alignment](https://github.com/godaddy-wordpress/coblocks/pull/884) setting to use utility classes
+* Convert [Share block text alignment](https://github.com/godaddy-wordpress/coblocks/pull/897) setting to use utility classes
+* Convert [Icon block text alignment](https://github.com/godaddy-wordpress/coblocks/pull/932) setting to use utility classes
+* [Update Media Card toolbar icons](https://github.com/godaddy-wordpress/coblocks/pull/935) to match the improved Gutenberg iconography
+* [Update the Services block icons](https://github.com/godaddy-wordpress/coblocks/pull/934)
+* [Remove orientation sidebar controls](https://github.com/godaddy-wordpress/coblocks/pull/914) on the Shape Divider block
+* Improve the [Map block description](https://github.com/godaddy-wordpress/coblocks/pull/910)
+* [Prevent Styles panel opening by default](https://github.com/godaddy-wordpress/coblocks/pull/909) on the Food and Drinks block
+* [Disable HTML editing](https://github.com/godaddy-wordpress/coblocks/pull/908) of gallery blocks
+* Add [block icon to the media placeholder](https://github.com/godaddy-wordpress/coblocks/pull/927) on the Logos and Badges block
+* [Remove the default block appender](https://github.com/godaddy-wordpress/coblocks/pull/892) (added in Gutenberg 6.5) on the Row block
+* [Display the "Add" accordion item button](https://github.com/godaddy-wordpress/coblocks/pull/836) only when the parent block is selected
+* [Remove background color and image support](https://github.com/godaddy-wordpress/coblocks/pull/913) from gallery blocks
+* [Add top/bottom margin removal](https://github.com/godaddy-wordpress/coblocks/pull/912) toggles to the gallery blocks
+* Removed a screenshot to [prevent a potential trademark violation](https://github.com/godaddy-wordpress/coblocks/pull/911)
+* Minor code cleanups ([#924](https://github.com/godaddy-wordpress/coblocks/pull/924), [#928](https://github.com/godaddy-wordpress/coblocks/pull/928), [#931](https://github.com/godaddy-wordpress/coblocks/pull/931), [#933](https://github.com/godaddy-wordpress/coblocks/pull/933))
+
+### Bug Fixes
+* [Remove inherit colors fallback](https://github.com/godaddy-wordpress/coblocks/pull/940) from the Authors, Features, Media Card, and Row blocks
+* [Fix the block icon](https://github.com/godaddy-wordpress/coblocks/pull/937) shown in the Food Item block's sidebar and toolbar
+* Fix [incorrect image height](https://github.com/godaddy-wordpress/coblocks/pull/929) being applied on the Masonry block
+* Prevent the [style preview from resizing](https://github.com/godaddy-wordpress/coblocks/pull/887) when resizing an image
+* Fix [alignment of images within the Features block](https://github.com/godaddy-wordpress/coblocks/pull/885)
+* Fix [background image upload error](https://github.com/godaddy-wordpress/coblocks/pull/906) when using drag and drop on the Hero block
+
+1.14.0 / 2019-09-19
+===================
+
+### Features
+* Add new [Crop Settings panel](https://github.com/godaddy-wordpress/coblocks/pull/749) to the Image and Cover blocks to allow image cropping
+* Add [font size, background and text color controls](https://github.com/godaddy-wordpress/coblocks/pull/808) to the Author block
+* Add new Image block styles to [mask images with a wave shape](https://github.com/godaddy-wordpress/coblocks/pull/877)
+
+### Enhancements
+* Improve the [context of strings](https://github.com/godaddy-wordpress/coblocks/pull/852) for translators
+* Add a [new filter](https://github.com/godaddy-wordpress/coblocks/pull/834) in the Form block to prevent wp_mail from sending mail
+* Move the CoBlocks [top-level admin page](https://github.com/godaddy-wordpress/coblocks/pull/746) under Tools
+* Shorten [the Button block placeholder text](https://github.com/godaddy-wordpress/coblocks/pull/878) within the Hero block
+* Add [additional carousel controls](https://github.com/godaddy-wordpress/coblocks/pull/765) to the Carousel block
+* Update the [Pricing Table block toolbar control](https://github.com/godaddy-wordpress/coblocks/pull/811) to follow new Gutenberg patterns
+* Update the [Row block toolbar control](https://github.com/godaddy-wordpress/coblocks/pull/827) to follow new Gutenberg patterns
+* Lay the groundwork for [improved automated tests for blocks](https://github.com/godaddy-wordpress/coblocks/pull/835) using Jest
+
+### Bug Fixes
+* Fix the [styles preview](https://github.com/godaddy-wordpress/coblocks/pull/879) in the Icon block in Gutenberg 6.3+
+* Fix one column Pricing Table block display to use the [full available width](https://github.com/godaddy-wordpress/coblocks/pull/844)
+* Remove [margin bottom](https://github.com/godaddy-wordpress/coblocks/pull/845) from the last item within the Feature block
+* Improve the [spacing between the figure and content elements](https://github.com/godaddy-wordpress/coblocks/pull/846) in the Services block
+* Avoid z-index issues with the [Hero block toolbar](https://github.com/godaddy-wordpress/coblocks/pull/838)
+* Fix [misaligned responsive control SVG icons](https://github.com/godaddy-wordpress/coblocks/pull/820) in Firefox and Edge
+
+
+= 1.13.0 =
+* New: Support for Gutenberg 6.4 🎊
+* New: Example block content added for the new block inserter help panel
+* New: Block level background color can be applied to the Share block
+* New: Block level background color can be applied to the Social Profiles block
+* New: Stacked Gallery block can now be aligned left, right, and center
+* New: Internationalization improvements for utilizing GlotPress
+* New: Improvements in code organization to prepare for the Block Directory
+* Tweak: Center align Share icons by default for wide and full block alignment
+* Tweak: Center align Social Profile icons by default for wide and full block alignment
+* Tweak: Simplify top and bottom block margin setting labels
+* Tweak: Version history moved to a changelog.txt file
+* Tweak: Adjust spacing for nested blocks when selecting the parent block
+* Tweak: Improve the Pricing block description
+* Tweak: Improve the Social Profiles block description
+* Tweak: Improve the Highlight block description
+* Tweak: Improve the Author block icon and description
+* Tweak: Improve the placeholder behavior in the Food and Drinks block
+* Tweak: Unify the size control in the Icon block to match core settings
+* Tweak: Added a cancel button to the Map block preventing unwanted updates
+* Tweak: Simplify specificity of CSS styles on the Alert block
+* Tweak: Simplify specificity of CSS styles on the Accordion block
+* Tweak: Moved the Accordion block into the CoBlocks block category
+* Tweak: Change the Icon block size selector to a proper Select control
+* Tweak: Focus style added to Food and Drink block's item attributes
+* Tweak: Prevent enqueuing frontend scripts on AMP responses
+* Tweak: Improved Alert block style selection with core component
+* Fix: Grid layout control no longer visually broken on the Hero block
+* Fix: Removed the "Layout" sidebar panel from the Row block
+* Fix: Resolve grid control tooltips missing a unique key
+* Fix: Child blocks no longer missing when adding the Hero block to a post
+* Fix: Gallery block's media filter control no longer missing dropdown indicator
+* Fix: Resolve the edit screen failing to load with a Hero block present
+* Fix: Icon block no longer missing height attribute when a size is applied
+* Fix: Styles panel no longer visually broken on the Services block
+* Fix: Styles panel no longer visually broken on the Food and Drinks block
+* Fix: Styles panel no longer visually broken on the Share block
+* Fix: Styles panel no longer visually broken on the Social Profiles block
+* Fix: Author image placeholder no longer misaligned
+* Fix: Orientation control no longer visually broken on the Shape Divider block
+* Fix: Shape Divider block no longer loses focus when using the resize control
+* Fix: Hero block no longer loses focus when using the resize control
+* Fix: Gif block no longer loses focus when using the resize control
+* Fix: Icon block no longer loses focus when using the resize control
+* Fix: Carousel Gallery block no longer loses focus when using the resize control
+* Fix: Row block no longer loses focus when using the resize control
+* Fix: When empty, the Pricing Table block no longer saves to the post content
+* Fix: Features block is now utilizing the available block width
+* Fix: Alert block no longer escapes HTML when transforming another block to it
+* Fix: Click to Tweet block no longer removes inline HTML elements from pasted text
+* Fix: Social Profiles popover component no longer visually broken
+
+= 1.12.1 =
+* Tweak: Start refactoring blocks to align with the Gutenberg Block Registration API RFC
+* Tweak: Add proper block descriptions to the Services block
+* Tweak: Add error notice to the Gist block to prevent silent failures
+* Tweak: Improve accessibility via tab control in the Form block
+* Tweak: Add support for SelectControl components within the Dimensions Controls components
+* Tweak: Add wrapper to Hero block content to provide a max width limitation
+* Fix: Resolve typo in the Icon block
+* Fix: Resolve issue where the active ResizableBox handles properly display
+* Fix: Alert block no longer escapes valid html when transformed
+* Fix: Providing a Gist url with a file hash properly loads the targetted Gist
+* Fix: Resolve issue where custom font sizes led to invalid block markup
+* Fix: Add minor style update to the Typography Controls toolbar icon
+* Fix: Removing the Gist URL will now revert the Gist block to its initial state
+* Fix: Map block is no longer using a global which was previously renamed
+
+= 1.12.0 =
+* New: Add new Logo & Badges block
+* New: Add new Social Profiles block
+* New: Add new Services block
+* New: Introduce Jest & PHPUnit tests
+* Tweak: Improve UI of Share block icon selection
+* Tweak: Add top/bottom spacing controls to the core Group block
+* Tweak: Remove admin footer notice
+* Tweak: Update icons for Carousel and Stacked Gallery blocks
+* Tweak: Adjust keywords for Share and Features blocks
+* Tweak: Adjust social icon SVGs
+* Tweak: Adjust Pinterest icon color to the proper brand color
+* Tweak: Remove blue color from icons for a cleaner interface
+* Tweak: Improve Hero block initial state with better placeholders
+* Tweak: Add ascending plan titles to the Pricing Table block
+* Tweak: Hero block now supports IE 11+
+* Tweak: Share and Social Profiles blocks now support IE 11+
+* Tweak: Food & Drinks block now supports IE 11+
+* Tweak: Media Card block now supports IE 11+
+* Fix: Resolve issue where block background colors may not properly display in the editor
+* Fix: Resolve display issue with the Dynamic HR block while using TwentyNineteen
+* Fix: Resolve Hero block z-index issue on wide and full width alignments
+* Fix: Resolve issue with Checkbox list style SVG
+* Fix: Resolve issue with inline links within the Buttons block in Gutenberg 6.1.1
+
+= 1.11.1 =
+* Fix: Resolve duplicate registered block issue
+
+= 1.11.0 =
+* New: Support for Gutenberg 6.0 🎊
+* New: Add new Food & Drinks block for restaurants and eateries to create menus with
+* New: Add support for individual gallery links for images [Stacked and Masonry blocks]
+* New: Add support for opening gallery links in a new tab [Stacked and Masonry blocks]
+* New: Add new category in the block inserter for gallery blocks
+* New: Add filter to nest Getting Started page in an admin parent menu
+* New: Add support for double-clicking a rendered map to bring up the location editor [Map block]
+* Tweak: Improve Gallery Block Icons
+* Tweak: Rename the "Social" block to the "Share" block [Share block]
+* Tweak: Update Facebook icon to new brand guidelines [Share block]
+* Tweak: Improved Row Block selected state in older versions of Gutenberg
+* Fix: Resole duplicate Google map script enqueued in editor [Map block]
+
+= 1.10.0 =
+* New: Add easy mode to the Google Map block without an API key requirement
+* New: Add reCAPCHTA support to the Form block
+* New: Add admin color scheme support for UI elements within CoBlocks
+* New: Add image reordering to gallery blocks
+* New: Add new "Circular" style to the Social block
+* New: Add official support for Gutenberg 5.8 🎊
+* Tweak: Clean up SASS variables
+* Tweak: Remove block mover from the Media Card block
+* Fix: Resolve Pricing Table outlines issue in Gutenberg 5.7+
+* Fix: Resolve Hero block layout issue
+* Fix: Resolve "normal" text transform issue within the editor
+
+= 1.9.6 =
+* Fix: Resolve issue with missing Gutenberg component
+
+= 1.9.5 =
+* New: Add new Form block 🎉
+* New: Add new Masonry gallery block 🎉
+* New: Add new Stacked gallery block 🎉
+* New: Add new Carousel gallery block 🎉
+* New: Add official support for Gutenberg 5.7 🎊
+* Tweak: Respect prefers-reduced-motion for fixed backgrounds
+* Tweak: Adjust Row block UI for WordPress 5.2/Gutenberg 5.7
+* Tweak: Check if Google Maps API Key is saved before calling
+* Tweak: Add a button to remove the saved Google Maps API key
+* Tweak: Update the Gist block UI for Gutenberg 5.7
+* Tweak: Switch build tasks to use Grunt instead of Gulp
+* Fix: Prevent redirection in WP-CLI and show log message for those users
+* Fix: Video background + background opacity now works properly on the Row block
+* Fix: Resolve issue where fullscreen + video bgs did not play well together
+* Fix: Resolve Shape Divider block color palette UI issue for Gutenberg 5.6
+* Fix: Adjust Media Card resizable UI for WordPress 5.2/Gutenberg 5.6
+* Fix: Resolve issue where a custom background color applied to a Button block filled the entire block content area
+* Fix: Add check for post before attempting to retrieve post meta
+
+= 1.9.4 =
+* Fix: Add proper escaping method for the Map block API key
+
+= 1.9.3 =
+* New: Add official support for Gutenberg 5.4 and the upcoming WordPress 5.2 release 🎊
+* New: Add new Hero block 🎉
+* New: Add new Buttons block for displaying up to four buttons side by side 🎉
+* New: Add support for video backgrounds in all blocks
+* New: Add three new button styles to the core Button block: Circular, Shadow and 3D
+* New: Add 25 new icons to the Icon block
+* New: Add a new "Getting Started with CoBlocks" admin page with video guides
+* New: Add support for Gutenberg 5.2+ Focal Point pickers for background images
+* New: Add support for the Heebo Google font
+* New: Add new "None" style for the core List block
+* New: Add new Row block inserters for an improved experience using rows and columns
+* New: Add responsiveness to the CoBlocks margin and padding utility classes
+* New: Add third-party support for the CoBlocks Typography Control Panel
+* New: Add support for Ubunto in the Typography Control Panel
+* Tweak: Improve the background image controls within Background Settings panels
+* Tweak: Add a new button within the Background Settings panel to remove applied media
+* Tweak: Improve the third Pricing Table Item block positioning for wide and full alignments
+* Tweak: Update background media toolbar controls for improved UX
+* Tweak: Remove <code> custom formatting, as Gutenberg 5.3 aand WordPress 5.2 includes one
+* Tweak: Admin feedback notice now redirects to the admin plugins page
+* Tweak: Improve the icon for the "Uppercase" format
+* Tweak: Adjust the custom icon color for CoBlocks blocks
+* Tweak: Use has_block() to determine whether a $post contains a specific block
+* Tweak: Background opacity value now goes from 0-100%
+* Tweak: Shape Divider block now uses min-Height, instead of Height
+* Fix: Resolve issue where the custom class would not show up in the editor for the Row block
+* Fix: Click to Tweet block styles now properly render inside of Row/Column blocks
+* Fix: Media Card block now properly renders in Edge
+* Fix: Features block toolbar now renders properly when selected
+* Fix: Resolve issue where a single column Row block would not allow background images
+* Fix: Resolve display issue of the Map block style selector in Gutenberg 5.3+
+
+= 1.9.2 =
+* Fix: Add hot fix to resolve the core inserter conflict on empty paragraph blocks
+
+= 1.9.1 =
+* New: Disable any block (CoBlocks, core and other third-party blocks) with the new CoBlocks Block Manager 🎉
+* New: Add official support for Gutenberg 5.0 and the upcoming WordPress 5.1 release 🎊
+* Tweak: Update keywords for the Google Map block
+* Fix: Google Map block help links now properly resolve
+
+= 1.9.0 =
+* New: Add Features block for adding up to three columns of features/services 🎉
+* New: Add Icon block for searching and adding outline or filled styled icons 🎉
+* New: Add Shape Divider block with eight styles for to visually distinquish page sections 🎉
+* New: Add responsive controls to the Shape divider so folks can drag and resize on mobile, tablet and desktop views
+* New: Add ability to apply text colors to the core List block
+* New: Add "Checkbox" style to the core List block
+* New: Add <code> text formatting toolbar control
+* Tweak: The coBlocksSpacing feature now auto-toggles based on a Shape Divider block
+* Tweak: Padding it auto-applied when a Row block has a background color, or image, assigned
+* Tweak: Updated keywords for the Row block
+* Tweak: Improved the reponsive nature of the Row block within the editor
+
+= 1.8.0 =
+* New: Add Media Card block for showcasing videos and imagery with an overlaid card 🎉
+* New: Add new advanced controls for turning off block margins
+* New: Add typography controls to the Accordion block
+* New: Add support for responsive Row blocks within the editor
+* New: Add a new toggle control with support for Internet Explorer accordions via polyfill
+* New: Add new accordions items with duplicated styling using the new “Add Accordion Item” button
+* Tweak: Row block gutters not properly execute on mobile
+* Tweak: Typography line height control now uses 0.01 steps for more flexibility.
+* Tweak: Click to Tweet Block uses rel=“noopener” now
+* Tweak: Buttons added to the a pricing table do not inherit custom fonts
+* Tweak: Update the Typography Panel icon
+* Tweak: Update the Uppercase formatting icon
+* Tweak: Move the “Stack on Mobile” control within the Row block to its Advanced sidebar panel
+* Tweak: Background color setting from the core Heading block
+* Tweak: Improve the UI of the Click to Tweet toolbar username field
+* Tweak: Change the `data-custom-fontfamily` attribute to `data-coblocks-font` within the editor
+* Fix: Pricing Table blocks with four tables look better
+* Fix: Custom background colors within the Highlight block now properly resolve
+* Fix: Single column Row blocks now display properly
+* Fix: Remove the Accordion Item focus applies within the editor
+* Fix: Border radius applied to an Accordion Item block is now properly styled
+* Fix: Resolve issue where advanced dimension control setting would not properly reset
+* Fix: Remove the vertical column resizer in the Row block on mobile
+* Fix: Row blocks added to Accordion Item blocks now properly display fullwidth
+* Fix: Removed additional spacing on the Pricing Table block
+* Fix: Resolve issue where custom font selections may be overwritten by the CoBlocks theme
+* Fix: Dropzone labels within CoBlocks themes are now properly sized
+* Fix: Resolve issue where the Map block may not properly render on the front-end
+* Fix: Resolve issue where paragraph blocks with backgrounds did not have appropriate padding within Column blocks
+* Fix: Resolve issue where custom text colors would not properly resolve within Row blocks in TwentyNineteen
+
+= 1.7.0 =
+* New: Add Map block with six built-in map styles, zoom, controls and marker size options 🎉
+* New: Add support for em units on Advanced dimensions controls
+* New: Add new two column sidbar layouts (66%/33%) and (33%/66%) to the Row block
+* New: Add "Huge" option for the Row block gutter
+* New: Add :accordion text prefixes for faster block creation, where the number of ":" represents the number of accordion items
+* Tweak: Add descritive help text to the Row block "Stack on mobile" control
+* Tweak: Move the Row block "Stack on mobile" control to the block's Advanced panel
+* Tweak: Replace the Accordion and Accordion Item block icons with more identifying iconography
+* Fix: Transforming paragrahs to/from highlights now properly transform child elements
+* Fix: Row block width percentage tooltip now displays properly, regardless of the current browser
+* Fix: Nested Accordion blocks are now properly positioned
+* Fix: Fullwidth rows in the core TwentyNineteen theme now display better
+
+= 1.6.0 =
+* New: Add drag and resizable Row and Columns blocks with support for dynamic layouts
+* New: Add controls to the Row and Columns blocks for adjusting margin and padding
+* New: Add responsive media query controls to the Row and Columns blocks
+* New: Add :row text prefixs for faster block creation, where the number of ":" represents the number of columns
+* New: Adjust row layouts from the row toolbar or inspector sidebar panel
+* New: Add support for Google fonts!
+* New: Add Typography Control Panel for selecting custom Google fonts
+* New: Add line-height controls to the Typography Control Panel
+* New: Add letter-spacing controls to the Typography Control Panel
+* New: Add support for customizing fonts of core heading, paragraph, and button blocks
+* New: Add support for conditional font weights from Google fonts
+* New: Add new .has-{size}-margin and .has-{size}-padding utility classes for the Dimensions controls
+* New: Add support for the WP 5.0+ wp_set_script_translations() function
+* New: Add new uppercase formatting control for making text all caps
+* New: Add custom background color support to core Heading blocks
+* New: Add custom text color support to core Heading blocks
+* Tweak: Add CoBlocks color to icons for improved recognition and visibility between similarly named blocks
+* Tweak: Pricing table now using standard background color and text color attributes
+* Tweak: Accordion block now supports to following blocks: Alert, Social, Highlight, Row, Column, List, Heading and Button
+* Tweak: Use the MediaUploadCheck component to make sure the current user has upload permissions
+* Tweak: Remove the background image overlay style and use the current background color as the overlay color
+
+= 1.5.3 =
+* Fix: Resolve isSelected styles issue with the Dynamic HR block
+
+= 1.5.2 =
+* New: Add support for column blocks to the Accordion Item
+* Fix: Resolve editor conflict when changing social block styles
+
+= 1.5.1 =
+* Tweak: Remove check for Gutenberg
+
+= 1.5.0 =
+* New: Refactor Accordion Item block to enable adding images, lists, headings and buttons
+* New: Add support for custom text/icon colors in the Social block
+* New: Add caption support to the Gist block
+* New: Refactor Gif block based on the core Image block
+* New: Add caption support to the Gif block
+* New: Add translation strings in /languages/coblocks.pot
+* New: Add support for the WP 5.0 wp_set_script_translations() function
+* New: Add coblocks-translations.php for referencing PHP translatable strings
+* New: Add ":alert" prefix transform for launching the Alert block
+* New: Add ":accordion" prefix transform for launching the Accordion block
+* New: Add ":author" prefix transform for launching the Author block
+* New: Add ":pricing" prefix transform for launching the Pricing block
+* New: Add ":author" prefix transform for launching the Author block
+* New: Add ":gist" prefix transform for launching the Gist block
+* Tweak: Remove unnessary padding from Highlight block
+* Tweak: Add help text to the Accordion item Display Open toggle
+* Tweak: Improve styling of social block for wider theme compatibility
+* Tweak: Improve pricing table structure within the editor and on the frontend
+* Tweak: Improve UI of the Author block within the editor
+* Tweak: Center the Gif Block loading spinner
+* Fix: Setting the social button radius to zero actually works now
+* Fix: Remove Gutenberg installation notice for WordPress 5.0
+* Fix: Pricing Table column selection now properly functions
+
+= 1.4.1 =
+* New: Gutenberg 4.5 compatibility! 🎊
+
+= 1.4.0 =
+* New: Gutenberg 4.4 compatibility! 🎊
+* New: Add ContrastChecker to Alert block
+* New: Add four new styles to the Social block
+* New: Add size, style and border radius options for the Social block
+* New: Add option to use social media colors on the Social block
+* New: Add Reddit share option to the Social block
+* New: Add Email share option to the Social block
+* New: Add Google Plus share option to the Social block
+* Tweak: Add ContrastChecker to the Social block
+* Tweak: Improve Gist block styling
+* Tweak: Add proper help text for the Gist block meta toggle
+* Tweak: Adjust inner blocks appender on Accordion block
+* Tweak: Improve Pricing Table item rendering within the editor and on the frontend
+* Tweak: Clean up editor styling for Dynamic HR block
+* Tweak: Clean editor styling for easier theme overrides
+* Tweak: Adjust Alert block colors
+* Fix: Click to Tweet transforms function properly
+* Fix: Dynamic HR transforms
+
+= 1.3.0 =
+* New: Gutenberg 4.2 compatibility! 🎊
+* New: Accordion block now uses InnerBlocks to generate multiple items
+* New: Add font size controls to the Highlight block
+* Tweak: Improved font size controls for the Click to Tweet block
+* Tweak: Add InnerBlocks button block support to the Author block
+* Tweak: Add InnerBlocks button block support to the Pricing Table block
+* Tweak: Add CoBlocks icon to the block category
+* Tweak: Improve block category registration
+* Tweak: Improve how blocks are registered
+
+= 1.2.0 =
+* New: Gutenberg 4.0 compatibility! 🎊
+* Fix: Resolve missing resize handles for the Dynamic HR and Gif blocks
+* Fix: Resolve attribute source 4.0+ issue for the Author, Alert, and Accordion blocks
+* Tweak: Resolve line-height issue on the Pricing Table block buttons
+
+= 1.1.10 =
+* New: Gutenberg 3.9 compatibility! 🎊
+* Fix: Resolve attribute issue with italized strings in the Accordion block
+* Fix: Resolve Pricing Table block display issue in Gutenberg 3.9
+
+= 1.1.9 =
+* Fix: Click to Tweet display bug on the unified toolbar
+* Fix: The Dynamic Separator is now editable when the unified toolbar is enabled
+* Tweak: Add proper RichText.isEmpty checks
+* Tweak: Add better defaults for the Alert block
+
+= 1.1.8 =
+* New: Refactor Pricing Table block
+* New: Add Pricing Table Item child-block
+* New: Now add up to four pricing tables
+* Fix: Resolve Pricing Table block line height bug
+* Fix: Resolve left/right/center alignment bug in the Gif block
+* Fix: Resolve issue where the unified toolbar displayed some controls oddly
+* Tweak: Update icons to reflect Gutenberg's updated UI
+* Tweak: Update Pricing Table block icons to better represent each button URL field
+* Tweak: Resolve deprecated .value prop in color objects (for Gutenberg 3.9+)
+* Tweak: Update getColorClass to getColorClassName
+
+= 1.1.7 =
+* New: Add transforms for improved copy/pasting of CoBlocks blocks
+* New: Add support for color classes in the Dynamic HR block
+* New: Add DropZone support for uploading the avatar within the Author block
+* Fix: Click to Tweet transforms now properly set
+* Tweak: Improve splitBlock functionality for an improved UX with the Highlight block
+* Tweak: Move Dynamic HR block style option to use the Gutenberg styles UI
+
+= 1.1.6 =
+* New: Add a notice to install or activate the companion CoBlocks WordPress theme
+* New: Add a feedback request to display after a week
+
+= 1.1.5 =
+* New: Gutenberg 3.6.2 compatibility! 🎊
+* New: Add a "Delete Gif" control to the Gif block
+* New: Refactor the Alert block
+* Tweak: Adjust UI for Gutenberg 3.6+
+* Tweak: Update block icons to fit in better with the new icons in core Gutenberg
+* Tweak: Fix the Dynamic HR block rendering to resemble the core spacer block
+
+= 1.1.4 =
+* Fix: Resolve an issue where the Author block would throw an error when the button is clicked
+
+= 1.1.3 =
+* New: Gutenberg 3.5 compatibility! 🎊
+* Tweak: UI fix for the Gif block to support Gutenberg 3.5
+* Tweak: Minor style fixes for the Gif Block wide and full alignments
+
+= 1.1.2 =
+* New: Gutenberg 3.4 compatibility! 🎊
+* New: Add support for translations
+* Fix: Update Gif block UI for the latest ResizableBox capabilities
+* Tweak: Move CoBlocks blocks into a separate block category
+* Tweak: Add support for color classes to the Alert and Highlight blocks
+* Tweak: Add a new "type" attribute for the Alert block
+* Tweak: Update blocks to use the new PanelColorSettings component
+* Tweak Use the RichText.Content component for the Author block
+* Tweak: Add a "Remove Image" button for the Author block
+
+= 1.1.1 =
+* New: Gutenberg 3.1.1 compatibility! 🎊
+* New: Add getColorClass support to the Pricing Table block
+* New: Add ContrastChecker support to the Pricing Table block
+* New: Add withFallbackStyles support to the Pricing Table block
+* Tweak: Add proper left/right/center alignment option for the Pricing Table block
+* Tweak: Implement RichText.Content front-end rendering within the Pricing Table block
+* Tweak: Set withColors for Gutenberg 3.1.0+ support
+* Tweak: Resolve Pricing Table block Inspector Panel typo
+* Tweak: Update the Pricing Table block UI for a more streamlined editing experience
+
+= 1.1.0 =
+* New: Add Highlight block 🎉
+* New: Add wide alignment support for the GitHub Gist block
+* New: Add <noscript> support to the GitHub Gist block
+* Tweak: Add a check for #file in the GitHub Gist block + store the file name properly if it's found
+* Tweak: Implement color classes for the Click to Tweet block
+* Fix: Set a max width for the Click to Tweet block's empty button placeholder
+
+= 1.0.9 =
+* New: Gutenberg 3.0 compatibility! 🎊
+* Tweak: Add a gist file TextControl block control
+* Tweak: Add default value to the buttonText attribute of the Author block
+* Tweak: Adjust the Dynamic Separator block resize handlers, which changed in Gutenberg 3.0
+* Fix: Assign proper src for custom block SVG icons per Gutenberg 3.0
+* Fix: Center Author block avatar uploader placeholder SVG
+* Fix: Check if isSelected before showing the alert block title
+
+= 1.0.8 =
+* New: Gutenberg 2.9 compatibility! 🎊
+* Tweak: Improve UI of the Accordion block component toolbar
+* Tweak: Improve UI of the Pricing Table button links
+* Tweak: Improve UI of the Author block
+* Tweak: Ensure box shadow and text-decoration do not affect social icons
+
+= 1.0.7 =
+* New: Gutenberg 2.8 compatibility! 🎊
+* Tweak: Change the name of the Dynamic HR block to Dynamic Separator
+* Tweak: Modify the edit component of the Dynamic Separator to resemble the core Spacer block
+* Tweak: Change the Dynamic Separator's height range control to a number input
+* Fix: Adjust the pricing table button markup to match the core Button block for Gutenberg 2.8
+* Fix: Remove custom color function for the Alert block
+* Fix: Remove the Spacer block as Gutenberg 2.8+ now has a Spacer block
+* Fix: Resolve alert text editor error
+
+= 1.0.6 =
+* New: Add Pricing Table block 🎉
+
+= 1.0.5 =
+* New: Add Author block 🎉
+* New: Add Click to Tweet block 🎉
+* Tweak: Adjust focus style for the Accordion block
+
+= 1.0.4 =
+* New: Add GitHub Gist block 🎉
+
+= 1.0.3 =
+* Fix: Remove wp-edit-blocks front-end dependency
+
+= 1.0.2 =
+* New: Add focus style for the Accordion block
+* Tweak: Adjust font size for the Alert block title
+* Fix: Alert block text color issue
+
+= 1.0.1 =
+* New: Accordion block 🎉
+* New: Add block transforms for the Alert, Spacer, and Dynamic HR blocks
+* New: Refactor Alert block
+* Tweak: a content check before rendering the Alert block
+* Tweak: Rename "Separator (Dynamic)" block to "Dynamic HR"
+* Tweak: Update Alert block icon
+* Tweak: Update Gif block category to "common"
+
+= 1.0.0 =
+* Initial release on WordPress.org. Enjoy!

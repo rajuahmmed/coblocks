@@ -1,0 +1,91 @@
+.wp-block[data-type="coblocks/gallery-carousel"] {
+
+	&.wp-block[data-align="full"] > .block-editor-block-list__block-edit figure {
+		width: auto;
+	}
+
+	// Set the appender to full height (second is the pre Gutenberg 5.6 method).
+	.coblocks-gallery--figure .components-form-file-upload {
+		height: 100%;
+	}
+
+	// Set the carousel to 100% height in the editor
+	.wp-block-coblocks-gallery-carousel {
+
+		&,
+		.coblocks-gallery {
+			height: 100%;
+		}
+	}
+
+	// Fixes issue with multiple dropzones displaying when dropping in an image.
+	.components-drop-zone.is-active {
+
+		+ .wp-block-coblocks-gallery-carousel div div div div div:last-child .components-drop-zone {
+			display: none;
+		}
+	}
+
+	.flickity-enabled {
+		height: 100% !important;
+		position: inherit;
+	}
+
+	.has-responsive-height {
+
+		> span .components-resizable-box__handle {
+			display: none !important;
+		}
+
+		.carousel-nav {
+			margin-top: 0 !important;
+		}
+	}
+
+	.has-responsive-height .has-carousel.flickity-enabled {
+		height: auto !important;
+		padding-bottom: 56.25%;
+		position: relative;
+	}
+
+	.has-responsive-height.components-resizable-box__container {
+		height: auto !important;
+	}
+
+	.carousel-nav {
+
+		.coblocks--item-thumbnail {
+			opacity: 0.4;
+		}
+
+		.coblocks--item-thumbnail:first-of-type {
+			opacity: 1;
+		}
+	}
+
+	.wp-block-blockgallery-thumbnails {
+		overflow: visible;
+	}
+}
+
+.wp-block[data-type="core/group"] .components-resizable-box__container .wp-block-coblocks-gallery-carousel {
+	margin-bottom: 40px !important;
+	margin-top: 40px !important;
+}
+
+// Shim to fix styles in the previewer.
+.block-editor-inserter__preview-content .wp-block-coblocks-gallery-carousel {
+
+	.flickity-button:disabled {
+		opacity: 1;
+	}
+}
+
+// Needed until GB 6.9 is merged into core or backward support.
+// Hide the placeholder when not selected.
+.block-editor-block-list__block[data-type="coblocks/gallery-carousel"]:not(.is-selected):not(.is-focused) .coblocks-gallery {
+
+	div.components-form-file-upload {
+		display: none;
+	}
+}

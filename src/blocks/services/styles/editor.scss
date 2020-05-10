@@ -1,0 +1,47 @@
+.wp-block-coblocks-services {
+
+	.block-editor-media-placeholder {
+		padding-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.block-list-appender {
+		display: none !important;
+	}
+}
+
+// CoBlocks style previewer
+.coblocks-editor-block-styles {
+
+	.align-center {
+
+		.service-svg-moving-path {
+			transform: translateX(4px);
+		}
+	}
+
+	.align-left {
+
+		.service-svg-moving-path {
+			transform: translateX(0);
+		}
+	}
+
+	.align-right {
+
+		.service-svg-moving-path {
+			transform: translateX(8px);
+		}
+	}
+
+	.block-editor-block-styles__item-preview {
+		height: 82px;
+		padding: 0;
+	}
+}
+
+// Tweak inspector panel
+.components-toggle-control--services-action-button {
+	margin-top: 30;
+}

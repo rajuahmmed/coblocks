@@ -1,21 +1,174 @@
-.wp-block-coblocks-pricing-table {
-	&.has-4-columns {
-		.wp-block-coblocks-pricing-table-item {
-			@media (min-width: 600px) and (max-width: 1100px) {
-				flex-basis: 40%;
-			}
+.wp-block-coblocks-pricing-table-item {
+	padding: 4em 1.5em;
+	position: relative;
+	width: 100%;
+
+	@include break-small() {
+		margin-bottom: 0;
+	}
+
+	&:not(.has-background) {
+		background: hsla(240, 5%, 57%, 0.1);
+	}
+
+	&__title {
+		margin-top: 0;
+		padding: 0;
+	}
+
+	&__price-wrapper {
+		display: flex;
+		line-height: 1;
+		position: relative;
+	}
+
+	&__currency {
+		font-size: 1em;
+	}
+
+	&__amount {
+		font-size: 5em;
+		letter-spacing: normal;
+		line-height: 1 !important;
+		margin: 0;
+		padding: 0;
+	}
+
+	& &__features {
+		margin: 0 0 30px;
+		max-width: none;
+		padding: 0;
+
+		ul,
+		li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
 		}
 	}
 
-	&__inner {
-		@media (min-width: 600px) {
-			display: flex;
-			flex: 0 1 auto;
-			flex-direction: row;
-			flex-wrap: wrap;
-			height: 100%;
-			margin: -15px !important;
-			position: relative;
+	& &__title {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	& &__price-wrapper {
+		margin-bottom: 20px;
+	}
+
+	.wp-block-button {
+		margin-bottom: 0;
+	}
+}
+
+.has-text-align-center .wp-block-coblocks-pricing-table-item__price-wrapper {
+	justify-content: center;
+}
+
+.has-text-align-right .wp-block-coblocks-pricing-table-item__price-wrapper {
+	justify-content: flex-end;
+}
+
+// Tweak three column pricing tables for improved responsive.
+.wp-block-coblocks-pricing-table__inner.has-3-columns.has-small-gutter > *:not(.block-editor-inner-blocks) {
+
+	&:nth-of-type(1),
+	&:nth-of-type(2) {
+
+		@include break-large-max() {
+			max-width: calc(100% / 2 - #{map-get($spacing, 1)});
+			flex-basis: 50%;
+		}
+	}
+
+	&:nth-of-type(3) {
+
+		@include break-large-max() {
+			max-width: 100%;
+			margin-top: calc(2 * #{map-get($spacing, 1)});
+			flex-basis: 100%;
+		}
+
+		@include break-small-max() {
+			margin-top: 0;
 		}
 	}
 }
+
+.wp-block-coblocks-pricing-table__inner.has-3-columns.has-medium-gutter > *:not(.block-editor-inner-blocks) {
+
+	&:nth-of-type(1),
+	&:nth-of-type(2) {
+
+		@include break-large-max() {
+			max-width: calc(100% / 2 - #{map-get($spacing, 2)});
+			flex-basis: 50%;
+		}
+	}
+
+	&:nth-of-type(3) {
+
+		@include break-large-max() {
+			max-width: 100%;
+			margin-top: calc(2 * #{map-get($spacing, 2)});
+			flex-basis: 100%;
+		}
+
+		@include break-small-max() {
+			margin-top: 0;
+		}
+	}
+}
+
+.wp-block-coblocks-pricing-table__inner.has-3-columns.has-large-gutter > *:not(.block-editor-inner-blocks) {
+
+	&:nth-of-type(1),
+	&:nth-of-type(2) {
+
+		@include break-large-max() {
+			max-width: calc(100% / 2.01 - #{map-get($spacing, 3)});
+			flex-basis: 50%;
+		}
+	}
+
+	&:nth-of-type(3) {
+
+		@include break-large-max() {
+			max-width: 100%;
+			margin-top: calc(2 * #{map-get($spacing, 3)});
+			flex-basis: 100%;
+		}
+
+		@include break-small-max() {
+			margin-top: 0;
+		}
+	}
+}
+
+.wp-block-coblocks-pricing-table__inner.has-3-columns.has-huge-gutter > *:not(.block-editor-inner-blocks) {
+
+	&:nth-of-type(1),
+	&:nth-of-type(2) {
+
+		@include break-large-max() {
+			max-width: calc(100% / 2.02 - #{map-get($spacing, 4)});
+			flex-basis: 50%;
+		}
+	}
+
+	&:nth-of-type(3) {
+
+		@include break-large-max() {
+			max-width: 100%;
+			margin-top: calc(2 * #{map-get($spacing, 4)});
+			flex-basis: 100%;
+		}
+
+		@include break-small-max() {
+			margin-top: 0;
+		}
+	}
+}
+
+// Import legacy styles for older versions of CoBlocks
+@import "legacy";

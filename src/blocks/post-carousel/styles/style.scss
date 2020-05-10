@@ -1,0 +1,87 @@
+.wp-block-coblocks-post-carousel {
+
+	&.alignfull {
+		padding-left: map-get($spacing, 2);
+		padding-right: map-get($spacing, 2);
+
+		@include break-small() {
+			padding-left: map-get($spacing, 4);
+			padding-right: map-get($spacing, 4);
+		}
+	}
+
+	&:not(.alignwide) .coblocks-slick {
+
+		@include break-medium() {
+			padding-bottom: 0;
+		}
+	}
+
+	@import "slick";
+}
+
+.wp-block-coblocks-post-carousel__image {
+	display: table;
+	margin-bottom: map-get($spacing, 2);
+	position: relative;
+	width: 100%;
+
+	a {
+		display: block;
+		outline: none;
+		padding-top: 100%;
+		width: 100%;
+	}
+}
+
+.wp-block-coblocks-post-carousel__content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.wp-block-coblocks-post-carousel__date {
+	color: $dark-gray-300;
+	display: block;
+	font-size: $editor-font-size;
+	margin-bottom: map-get($spacing, 1);
+}
+
+.wp-block-coblocks-post-carousel__more-link {
+	align-self: self-start;
+	margin-top: map-get($spacing, 2);
+}
+
+.wp-block-coblocks-post-carousel__excerpt {
+	margin-top: map-get($spacing, 1);
+}
+
+// Carousel navigation
+.wp-block-coblocks-post-carousel:not(.alignwide) {
+
+	.slick-next,
+	.slick-prev {
+
+		@include break-medium() {
+			bottom: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	.slick-prev {
+
+		@include break-medium() {
+			left: -5em;
+		}
+	}
+
+	.slick-next {
+
+		@include break-medium() {
+			right: -5em;
+		}
+	}
+}
+
+// Import style tweaks for core WordPress themes
+@import "theme";

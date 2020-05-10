@@ -1,52 +1,31 @@
-// This SCSS file loads per every instance of each block.
+// Gutenberg modules
+@import "styles/editor/core/colors";
+@import "styles/editor/core/variables";
+@import "styles/editor/core/breakpoints";
+@import "styles/editor/core/mixins";
 
-// Fonts & basics
-$default-font: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
+// Spacing utility
+$spacing: (
+	0: 0,
+	1: 0.5em,
+	2: 1em,
+	3: 1.5em,
+	4: 2em,
+	5: 2.5em,
+	6: 3em,
+	7: 3.5em,
+	8: 4em
+);
 
-// CoBlocks branding color.
-$coblocks: #555eff;
+// Colors
+$color-twitter: #1da1f2;
+$color-alert-default-bg: #d6efee;
+$color-alert-default-color: #094264;
+$color-alert-warning-bg: #fbe7dd;
+$color-alert-warning-color: #8a4b30;
+$color-alert-error-bg: #ffdede;
+$color-alert-error-color: #8b343c;
+$color-alert-success-bg: #d0eac4;
+$color-alert-success-color: #154a28;
 
-// Colors.
-$black: rgb(41, 41, 41);
-$black-000: #000;
-$gray: #555d66;
-$red: #c92c2c;
-$lightred: #f9e2e2;
-$lightgreen: #eff9f1;
-$darkgreen: #337f46;
-$darkred: #a00;
-$green: #4ab866;
-$white: #fff;
-$lightgray: rgba(0, 0, 0, 0.15);
-
-// Accordion.
-$accordion-border-radius: 4px;
-$accordion-background: #f2f2f2;
-
-// Social.
-$twitter: #1da1f2;
-
-// Variables from core.
-$block-padding: 10px;
-$border-width: 1px;
-$break-small: 600px;
-$break-smallest: 420px;
-$grid-size-large: 11px;
-$dark-gray-500: #555d66; // Use this most of the time for dark items.
-
-@mixin break-small() {
-	@media (min-width: #{ ($break-small) }) {
-		@content;
-	}
-}
-
-@mixin break-smallest() {
-	@media (min-width: #{ ($break-smallest) }) {
-		@content;
-	}
-}
-
-$gutter--small: 18px;
-$gutter--medium: 22px;
-$gutter--large: 33px;
-$gutter--huge: 60px;
+@import "styles/mixins";

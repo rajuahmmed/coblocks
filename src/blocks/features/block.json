@@ -1,0 +1,22 @@
+{
+	"name": "coblocks/features",
+	"category": "layout",
+	"attributes": {
+		"headingLevel": {
+			"type": "integer",
+			"default": 4
+		},
+		"gutter": {
+			"type": "string",
+			"default": "medium"
+		},
+		"columns": {
+			"type": "number",
+			"default": 2
+		},
+		"contentAlign": {
+			"type": "string",
+			"default": "center"
+		}
+	}
+}

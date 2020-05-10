@@ -1,14 +1,12 @@
 @import "../common";
-
-// Style icons
-@import "editor/icons";
-
-// Style various inspector region and block toolbar controls
+@import "editor/columns";
+@import "editor/columns-gutter";
+@import "editor/columns-responsive";
 @import "editor/is-transient";
-@import "editor/numerals-control";
+@import "../components/**/editor.scss";
+@import "../extensions/**/editor.scss";
+@import "../blocks/**/editor.scss";
 
-// Mobile classes
-@import "editor/stacked";
-
-// Adjust dropZone component labels for our blocks.
-@import "editor/dropzone";
+// Legacy styling
+@import "legacy/margin-editor";
+@import "legacy/padding-editor";

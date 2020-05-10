@@ -1,16 +1,19 @@
-// Background
+@import "../common";
+@import "style/columns";
+@import "style/columns-responsive";
+@import "style/columns-gutter";
 @import "style/background-classes";
 @import "style/background-overlay";
 @import "style/background-parallax";
-
-// Editor formatting
-@import "style/formatting";
-
-// Utility classes
-@import "style/padding";
-@import "style/margin";
-@import "style/gutter";
+@import "style/has-padding";
+@import "style/has-margin";
 @import "style/shadow";
+@import "style/tooltips";
+@import "style/datepicker";
+@import "../components/**/style.scss";
+@import "../extensions/**/style.scss";
+@import "../blocks/**/style.scss";
 
-// Mobile classes
-@import "style/stacked";
+// Legacy styling
+@import "legacy/margin";
+@import "legacy/padding";

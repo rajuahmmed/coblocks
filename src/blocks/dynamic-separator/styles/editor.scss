@@ -1,4 +1,4 @@
-.editor-block-list__block[data-type="coblocks/dynamic-separator"] {
+.wp-block[data-type="coblocks/dynamic-separator"] {
 
 	.wp-block-coblocks-dynamic-separator {
 
@@ -7,14 +7,27 @@
 		}
 
 		&.is-selected {
-			background: #f3f4f5;
+			background: $light-gray-200;
 		}
 	}
 }
 
-.editor-block-styles__item-preview {
+.block-editor-block-styles__item-preview {
 
 	.wp-block-coblocks-dynamic-separator {
-		height: 60px !important;
+		height: 90px !important;
+
+		&::before {
+			top: 56% !important;
+		}
+
+		&.is-style-line::before {
+			width: 4vw;
+			top: 71% !important;
+		}
+
+		&.is-style-fullwidth::before {
+			top: 71% !important;
+		}
 	}
 }

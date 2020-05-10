@@ -1,70 +1,94 @@
 === Page Builder Gutenberg Blocks – CoBlocks ===
-Author URI: https://coblocks.com
-Plugin URI: https://coblocks.com
-Contributors: coblocks, richtabor, phpbits, thatplugincompany
-Tags: blocks, gutenberg, editor, page builder, gutenberg blocks
+Author URI: https://www.godaddy.com
+Plugin URI: https://www.coblocks.com
+Contributors: coblocks, godaddy, richtabor, phpbits, eherman24, jonathanbardo, jrtashjian, sbalakr2, dmatuszak, paranoia1906
+Tags: page builder, Gutenberg blocks, WordPress blocks, gutenberg, blocks
 Requires at least: 5.0
-Tested up to: @@pkg.tested_up_to
-Requires PHP: 5.2.4
-Stable tag: @@pkg.version
-License: GPL-3.0
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tested up to: 5.4
+Requires PHP: 5.6
+Stable tag: 1.26.1
+License: GPL-2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 CoBlocks is a suite of page builder WordPress blocks for Gutenberg, with 10+ new blocks and a true page builder experience with rows and columns.
 
 == Description ==
 
-[CoBlocks](https://coblocks.com?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=coblocks) is the most innovative collection of page building WordPress blocks for the new Gutenberg WordPress block editor. Hands down, CoBlocks is the Gutenberg page builder you've been waiting for; it will make you rethink what WordPress is capable of.
+[CoBlocks](https://coblocks.com?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=coblocks) is the most innovative collection of page building WordPress blocks for the new Gutenberg WordPress block editor.
+
+With additional blocks and true row and column building, CoBlocks gives you a true page builder experience for Gutenberg.
+
+CoBlocks is powerful but lightweight: it adds functionality to the WordPress editor without bloat. This is the plugin you've been waiting for, and it will make you rethink what WordPress is capable of.
 
 
-= See for yourself =
-
+= See For Yourself =
 https://www.youtube.com/watch?v=SfWoVX_uJ0M
 
 
-## One for all, all in one
-[CoBlocks](https://coblocks.com?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=coblocks) is the last page builder you’ll ever need. With tens of custom blocks, including the extraordinary row block, you have everything you need to make beautiful web pages:
+## Make Beautiful Web Pages With Gutenberg & CoBlocks
+[CoBlocks](https://coblocks.com?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=coblocks) is the last page builder you’ll ever need: you get a winning mix of additional WordPress blocks, and page builder functionality. With CoBlocks you have everything you need to make beautiful web pages with the new block editor:
 
-* Resizable Row/Columns (New!)
-* Map Block (New!)
-* Accordion
-* Alert
-* Author Profile
-* Click to Tweet
-* Dynamic Separator
-* Gif
-* GitHub Gist
-* Highlight
-* Pricing Table
-* Social Sharing
+* Accordion Block
+* Alert Block
+* Author Profile Block
+* Buttons Block
+* Carousel Gallery Block
+* Click to Tweet Block
+* Collage Gallery Block
+* Dynamic Separator Block
+* Events Block (New!)
+* Features Block
+* Food & Drinks Block
+* Form Block
+* Gif Block
+* GitHub Gist Block
+* Hero Block
+* Highlight Block
+* Icon Block
+* Logos & Badges Block
+* Map Block
+* Masonry Gallery Block
+* Media Card Block
+* Offset Gallery Block
+* Post Carousel Block
+* Posts Block
+* Pricing Table Block
+* Resizable Row/Columns Blocks
+* Services Block
+* Shape Divider Block
+* Social Profiles Block
+* Social Sharing Block
+* Stacked Gallery Block
 
+## Breakthrough Page Builder System
+[CoBlocks](https://coblocks.com?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=coblocks) features an innovative block system that allows you to create stunning web pages, and even entire websites, with the new WordPress editor.
+
+You get the extra blocks you need <em>and</em> the layout and design functionality for a true page builder experience.
+
+Use the exceptional <strong>Row and Columns blocks</strong> to add dynamically generated content areas with specific <strong>responsive margin and padding settings</strong> that only CoBlocks provides.
+
+Style these with innovative new blocks such as the Shape Divider, which lets you split up your content with beautiful dividers.
+
+Each of the WordPress blocks within CoBlocks have been precisely fined tuned to offer a familiar, yet powerful, customization experience. Tailor each block to your taste using our custom controls and settings. <strong>Change fonts, set margin and padding, pick colors and more.</strong>
 
 ## Custom Typography Controls
 The breakthrough Typography Control Panel within CoBlocks lets you design web pages with alluring typographic elements. <strong>Set fonts, sizes, weights, transformations and more</strong>, in our CoBlocks blocks, <em>and</em> in core WordPress blocks.
 
+## Free Companion Theme
+CoBlocks is built to show off the best of Gutenberg, but it requires a Gutenberg-first theme to unlock its full potential. We also created the free [Go theme](https://wordpress.org/themes/go/) in the WordPress theme repository as the perfect companion for CoBlocks.
 
-## Breakthrough Block System
-[CoBlocks](https://coblocks.com?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=coblocks) features an innovative block system that allows you to create stunning web pages, and even entire websites, without one line of code.
+## Going Beyond Gutenberg Blocks
+The vision for CoBlocks is to create a suite of Gutenberg blocks to help folks make beautiful websites easily. These newest releases of CoBlocks is the ultimate expression of that vision.
 
-Use the exceptional <strong>Row and Columns blocks</strong> to add dynamically generated content areas with specific <strong>responsive margin and padding settings</strong> that only CoBlocks provides.
-
-On top of that, each block within CoBlocks has been precisely fined tuned to offer a familiar, yet powerful, customization experience. Tailor each block to your taste using our custom controls and settings. <strong>Change fonts, set margin and padding, pick colors and more.</strong>
-
-
-## Our Vision
-The vision for CoBlocks has always been to create a suite of blocks to help folks make beautiful websites. This newest release of CoBlocks is the ultimate expression of that vision. And we think we've nailed it.
-
-<strong>Join us</strong> in welcoming the future of WordPress:
+<strong>Join us</strong> in welcoming the future of WordPress blocks:
 
 * [Visit the CoBlocks website](https://coblocks.com?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=coblocks)
-* [Subscribe to updates](http://eepurl.com/gd1S8D)
 * [Follow on Twitter](https://twitter.com/coblocks)
 * [Join our new Community](https://facebook.com/groups/coblocks)
 * [Like us on Facebook](https://www.facebook.com/coblocks/)
-* [Follow us on Instagram](https://www.instagram.com/coblockswp/)
 
-## Built with developers in mind
-Extensible, adaptable, and open source — CoBlocks is created with theme and plugin developers in mind. If you're intersted to jump in the project, there are opportunities for developers at all levels to get involved. [Contribute to CoBlocks](https://github.com/thatplugincompany/coblocks) and join the party. 🎉
+## Built With Developers in Mind
+Extensible, adaptable, and open source — CoBlocks is created with theme and plugin developers in mind. If you're intersted to jump in the project, there are opportunities for developers at all levels to get involved. [Contribute to CoBlocks on GitHub](https://github.com/godaddy-wordpress/coblocks) and join the party. 🎉
 
 
 == Screenshots ==
@@ -72,8 +96,7 @@ Extensible, adaptable, and open source — CoBlocks is created with theme and pl
 1. Make beautiful websites with CoBlocks
 2. Build modular grid systems with the CoBlocks Row and Columns blocks
 3. Drag to resize and then nest CoBlocks Row blocks
-4. Design with the CoBlocks Typography Control Panel
-5. Add CoBlocks core blocks to pages
+4. Add CoBlocks core blocks to pages
 
 == Installation ==
 
@@ -85,267 +108,21 @@ Extensible, adaptable, and open source — CoBlocks is created with theme and pl
 == Frequently Asked Questions ==
 
 = Is CoBlocks free? =
-Yes! CoBlock's core features are absolutely free.
+Yes! CoBlocks is 100% free and always will be.
 
 = How do I start using Gutenberg? =
-To get the full experience of the next-generation WordPress block editor, it helps to have a properly Gutenberg-optizied WordPress theme, like [this one](https://themebeans.com/themes/tabor?utm_medium=coblocks-lite&utm_source=readme&utm_campaign=readme&utm_content=tabor). Then install either WordPress 5.0+, or the offical Gutenberg [WordPress plugin](https://wordpress.org/plugins/gutenberg/).
+To get the full experience of the next-generation WordPress block editor, it helps to have a properly Gutenberg-optizied WordPress theme, like [this one](https://wordpress.org/themes/go/) and install WordPress 5.0 or higher.
+
+= How do I use my first CoBlocks Gutenberg blocks? =
+CoBlocks adds its Gutenberg blocks to the new WordPress editor, so you can use them exactly how you would any other WordPress blocks. Once the plugin is installed, create or edit a WordPress page or post, add a new block using the plus icon, and you'll find all of CoBlocks' WordPress blocks available.
 
 = What WordPress themes work with CoBlocks? =
-Any properly developed WordPress theme will work with CoBlocks, though if you're looking for an exceptional theme, check out [Tabor](https://themebeans.com/themes/tabor?utm_medium=coblocks-lite&utm_source=readme&utm_campaign=readme&utm_content=tabor).
+Any properly developed WordPress theme will work with CoBlocks, though if you're looking for an exceptional free theme, check out [Go](https://wordpress.org/themes/go/).
 
-Developers can also apply minor style touch-ups to their themes if necessary. If you're a developer and you need help, don't hesitate to [reach out](https://coblocks.com).
-
-= Where can I get help? =
-Please reach out via the contact form at the bottom right of [our website](https://coblocks.com).
+Developers can also apply minor style touch-ups to their themes if necessary. If you're a developer and you need help, don't hesitate to [reach out](https://wordpress.org/support/plugin/coblocks/).
 
 == Changelog ==
 
-= 1.7.0 =
-* New: Add Map block with six built-in map styles, zoom, controls and marker size options 🎉
-* New: Add support for em units on Advanced dimensions controls
-* New: Add new two column sidbar layouts (66%/33%) and (33%/66%) to the Row block
-* New: Add "Huge" option for the Row block gutter
-* New: Add :accordion text prefixes for faster block creation, where the number of ":" represents the number of accordion items
-* Tweak: Add descritive help text to the Row block "Stack on mobile" control
-* Tweak: Move the Row block "Stack on mobile" control to the block's Advanced panel
-* Tweak: Replace the Accordion and Accordion Item block icons with more identifying iconography
-* Fix: Transforming paragrahs to/from highlights now properly transform child elements
-* Fix: Row block width percentage tooltip now displays properly, regardless of the current browser
-* Fix: Nested Accordion blocks are now properly positioned
-* Fix: Fullwidth rows in the core TwentyNineteen theme now display better
-
-= 1.6.0 =
-* New: Add drag and resizable Row and Columns blocks with support for dynamic layouts
-* New: Add controls to the Row and Columns blocks for adjusting margin and padding
-* New: Add responsive media query controls to the Row and Columns blocks
-* New: Add :row text prefixs for faster block creation, where the number of ":" represents the number of columns
-* New: Adjust row layouts from the row toolbar or inspector sidebar panel
-* New: Add support for Google fonts!
-* New: Add Typography Control Panel for selecting custom Google fonts
-* New: Add line-height controls to the Typography Control Panel
-* New: Add letter-spacing controls to the Typography Control Panel
-* New: Add support for customizing fonts of core heading, paragraph, and button blocks
-* New: Add support for conditional font weights from Google fonts
-* New: Add new .has-{size}-margin and .has-{size}-padding utility classes for the Dimensions controls
-* New: Add support for the WP 5.0+ wp_set_script_translations() function
-* New: Add new uppercase formatting control for making text all caps
-* New: Add custom background color support to core Heading blocks
-* New: Add custom text color support to core Heading blocks
-* Tweak: Add CoBlocks color to icons for improved recognition and visibility between similarly named blocks
-* Tweak: Pricing table now using standard background color and text color attributes
-* Tweak: Accordion block now supports to following blocks: Alert, Social, Highlight, Row, Column, List, Heading and Button
-* Tweak: Use the MediaUploadCheck component to make sure the current user has upload permissions
-* Tweak: Remove the background image overlay style and use the current background color as the overlay color
-
-= 1.5.3 =
-* Fix: Resolve isSelected styles issue with the Dynamic HR block
-
-= 1.5.2 =
-* New: Add support for column blocks to the Accordion Item
-* Fix: Resolve editor conflict when changing social block styles
-
-= 1.5.1 =
-* Tweak: Remove check for Gutenberg
-
-= 1.5.0 =
-* New: Refactor Accordion Item block to enable adding images, lists, headings and buttons
-* New: Add support for custom text/icon colors in the Social block
-* New: Add caption support to the Gist block
-* New: Refactor Gif block based on the core Image block
-* New: Add caption support to the Gif block
-* New: Add translation strings in /languages/coblocks.pot
-* New: Add support for the WP 5.0 wp_set_script_translations() function
-* New: Add coblocks-translations.php for referencing PHP translatable strings
-* New: Add ":alert" prefix transform for launching the Alert block
-* New: Add ":accordion" prefix transform for launching the Accordion block
-* New: Add ":author" prefix transform for launching the Author block
-* New: Add ":pricing" prefix transform for launching the Pricing block
-* New: Add ":author" prefix transform for launching the Author block
-* New: Add ":gist" prefix transform for launching the Gist block
-* Tweak: Remove unnessary padding from Highlight block
-* Tweak: Add help text to the Accordion item Display Open toggle
-* Tweak: Improve styling of social block for wider theme compatibility
-* Tweak: Improve pricing table structure within the editor and on the frontend
-* Tweak: Improve UI of the Author block within the editor
-* Tweak: Center the Gif Block loading spinner
-* Fix: Setting the social button radius to zero actually works now
-* Fix: Remove Gutenberg installation notice for WordPress 5.0
-* Fix: Pricing Table column selection now properly functions
-
-= 1.4.1 =
-* New: Gutenberg 4.5 compatibility! 🎊
-
-= 1.4.0 =
-* New: Gutenberg 4.4 compatibility! 🎊
-* New: Add ContrastChecker to Alert block
-* New: Add four new styles to the Social block
-* New: Add size, style and border radius options for the Social block
-* New: Add option to use social media colors on the Social block
-* New: Add Reddit share option to the Social block
-* New: Add Email share option to the Social block
-* New: Add Google Plus share option to the Social block
-* Tweak: Add ContrastChecker to the Social block
-* Tweak: Improve Gist block styling
-* Tweak: Add proper help text for the Gist block meta toggle
-* Tweak: Adjust inner blocks appender on Accordion block
-* Tweak: Improve Pricing Table item rendering within the editor and on the frontend
-* Tweak: Clean up editor styling for Dynamic HR block
-* Tweak: Clean editor styling for easier theme overrides
-* Tweak: Adjust Alert block colors
-* Fix: Click to Tweet transforms function properly
-* Fix: Dynamic HR transforms
-
-= 1.3.0 =
-* New: Gutenberg 4.2 compatibility! 🎊
-* New: Accordion block now uses InnerBlocks to generate multiple items
-* New: Add font size controls to the Highlight block
-* Tweak: Improved font size controls for the Click to Tweet block
-* Tweak: Add InnerBlocks button block support to the Author block
-* Tweak: Add InnerBlocks button block support to the Pricing Table block
-* Tweak: Add CoBlocks icon to the block category
-* Tweak: Improve block category registration
-* Tweak: Improve how blocks are registered
-
-= 1.2.0 =
-* New: Gutenberg 4.0 compatibility! 🎊
-* Fix: Resolve missing resize handles for the Dynamic HR and Gif blocks
-* Fix: Resolve attribute source 4.0+ issue for the Author, Alert, and Accordion blocks
-* Tweak: Resolve line-height issue on the Pricing Table block buttons
-
-= 1.1.10 =
-* New: Gutenberg 3.9 compatibility! 🎊
-* Fix: Resolve attribute issue with italized strings in the Accordion block
-* Fix: Resolve Pricing Table block display issue in Gutenberg 3.9
-
-= 1.1.9 =
-* Fix: Click to Tweet display bug on the unified toolbar
-* Fix: The Dynamic Separator is now editable when the unified toolbar is enabled
-* Tweak: Add proper RichText.isEmpty checks
-* Tweak: Add better defaults for the Alert block
-
-= 1.1.8 =
-* New: Refactor Pricing Table block
-* New: Add Pricing Table Item child-block
-* New: Now add up to four pricing tables
-* Fix: Resolve Pricing Table block line height bug
-* Fix: Resolve left/right/center alignment bug in the Gif block
-* Fix: Resolve issue where the unified toolbar displayed some controls oddly
-* Tweak: Update icons to reflect Gutenberg's updated UI
-* Tweak: Update Pricing Table block icons to better represent each button URL field
-* Tweak: Resolve deprecated .value prop in color objects (for Gutenberg 3.9+)
-* Tweak: Update getColorClass to getColorClassName
-
-= 1.1.7 =
-* New: Add transforms for improved copy/pasting of CoBlocks blocks
-* New: Add support for color classes in the Dynamic HR block
-* New: Add DropZone support for uploading the avatar within the Author block
-* Fix: Click to Tweet transforms now properly set
-* Tweak: Improve splitBlock functionality for an improved UX with the Highlight block
-* Tweak: Move Dynamic HR block style option to use the Gutenberg styles UI
-
-= 1.1.6 =
-* New: Add a notice to install or activate the companion CoBlocks WordPress theme
-* New: Add a feedback request to display after a week
-
-= 1.1.5 =
-* New: Gutenberg 3.6.2 compatibility! 🎊
-* New: Add a "Delete Gif" control to the Gif block
-* New: Refactor the Alert block
-* Tweak: Adjust UI for Gutenberg 3.6+
-* Tweak: Update block icons to fit in better with the new icons in core Gutenberg
-* Tweak: Fix the Dynamic HR block rendering to resemble the core spacer block
-
-= 1.1.4 =
-* Fix: Resolve an issue where the Author block would throw an error when the button is clicked
-
-= 1.1.3 =
-* New: Gutenberg 3.5 compatibility! 🎊
-* Tweak: UI fix for the Gif block to support Gutenberg 3.5
-* Tweak: Minor style fixes for the Gif Block wide and full alignments
-
-= 1.1.2 =
-* New: Gutenberg 3.4 compatibility! 🎊
-* New: Add support for translations
-* Fix: Update Gif block UI for the latest ResizableBox capabilities
-* Tweak: Move CoBlocks blocks into a separate block category
-* Tweak: Add support for color classes to the Alert and Highlight blocks
-* Tweak: Add a new "type" attribute for the Alert block
-* Tweak: Update blocks to use the new PanelColorSettings component
-* Tweak Use the RichText.Content component for the Author block
-* Tweak: Add a "Remove Image" button for the Author block
-
-= 1.1.1 =
-* New: Gutenberg 3.1.1 compatibility! 🎊
-* New: Add getColorClass support to the Pricing Table block
-* New: Add ContrastChecker support to the Pricing Table block
-* New: Add withFallbackStyles support to the Pricing Table block
-* Tweak: Add proper left/right/center alignment option for the Pricing Table block
-* Tweak: Implement RichText.Content front-end rendering within the Pricing Table block
-* Tweak: Set withColors for Gutenberg 3.1.0+ support
-* Tweak: Resolve Pricing Table block Inspector Panel typo
-* Tweak: Update the Pricing Table block UI for a more streamlined editing experience
-
-= 1.1.0 =
-* New: Add Highlight block 🎉
-* New: Add wide alignment support for the GitHub Gist block
-* New: Add <noscript> support to the GitHub Gist block
-* Tweak: Add a check for #file in the GitHub Gist block + store the file name properly if it's found
-* Tweak: Implement color classes for the Click to Tweet block
-* Fix: Set a max width for the Click to Tweet block's empty button placeholder
-
-= 1.0.9 =
-* New: Gutenberg 3.0 compatibility! 🎊
-* Tweak: Add a gist file TextControl block control
-* Tweak: Add default value to the buttonText attribute of the Author block
-* Tweak: Adjust the Dynamic Separator block resize handlers, which changed in Gutenberg 3.0
-* Fix: Assign proper src for custom block SVG icons per Gutenberg 3.0
-* Fix: Center Author block avatar uploader placeholder SVG
-* Fix: Check if isSelected before showing the alert block title
-
-= 1.0.8 =
-* New: Gutenberg 2.9 compatibility! 🎊
-* Tweak: Improve UI of the Accordion block component toolbar
-* Tweak: Improve UI of the Pricing Table button links
-* Tweak: Improve UI of the Author block
-* Tweak: Ensure box shadow and text-decoration do not affect social icons
-
-= 1.0.7 =
-* New: Gutenberg 2.8 compatibility! 🎊
-* Tweak: Change the name of the Dynamic HR block to Dynamic Separator
-* Tweak: Modify the edit component of the Dynamic Separator to resemble the core Spacer block
-* Tweak: Change the Dynamic Separator's height range control to a number input
-* Fix: Adjust the pricing table button markup to match the core Button block for Gutenberg 2.8
-* Fix: Remove custom color function for the Alert block
-* Fix: Remove the Spacer block as Gutenberg 2.8+ now has a Spacer block
-* Fix: Resolve alert text editor error
-
-= 1.0.6 =
-* New: Add Pricing Table block 🎉
-
-= 1.0.5 =
-* New: Add Author block 🎉
-* New: Add Click to Tweet block 🎉
-* Tweak: Adjust focus style for the Accordion block
-
-= 1.0.4 =
-* New: Add GitHub Gist block 🎉
-
-= 1.0.3 =
-* Fix: Remove wp-edit-blocks front-end dependency
-
-= 1.0.2 =
-* New: Add focus style for the Accordion block
-* Tweak: Adjust font size for the Alert block title
-* Fix: Alert block text color issue
-
-= 1.0.1 =
-* New: Accordion block 🎉
-* New: Add block transforms for the Alert, Spacer, and Dynamic HR blocks
-* New: Refactor Alert block
-* Tweak: a content check before rendering the Alert block
-* Tweak: Rename "Separator (Dynamic)" block to "Dynamic HR"
-* Tweak: Update Alert block icon
-* Tweak: Update Gif block category to "common"
-
-= 1.0.0 =
-* Initial release on WordPress.org. Enjoy!
+### Bug Fixes
+* Render a submit button if not found in the block content [#1479](https://github.com/godaddy-wordpress/coblocks/pull/1479)
+* Remove a condition where a variable may not be defined [#1477](https://github.com/godaddy-wordpress/coblocks/pull/1477)

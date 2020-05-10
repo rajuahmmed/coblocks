@@ -1,17 +1,19 @@
 .wp-block-coblocks-media-card {
+
 	&__wrapper {
-		@media (max-width: #{ ($break-small) }) {
+
+		@include break-small-max() {
 			display: block !important;
 		}
 	}
 
-	.editor-block-list__block[data-type="coblocks/media-card"] & &__wrapper {
+	.wp-block[data-type="coblocks/media-card"] & &__wrapper {
 		grid-template-areas:
 			"media-text-media media-text-content"
 			"resizer resizer";
 	}
 
-	.editor-block-list__block[data-type="coblocks/media-card"] &.is-style-right &__wrapper {
+	.wp-block[data-type="coblocks/media-card"] &.is-style-right &__wrapper {
 		grid-template-areas:
 			"media-text-content media-text-media"
 			"resizer resizer";
@@ -25,6 +27,12 @@
 		height: 100%;
 		margin: 0;
 		width: 100%;
+		text-align: center !important;
+		align-items: center !important;
+
+		.components-placeholder__fieldset {
+			justify-content: center;
+		}
 
 		img,
 		video {
@@ -54,36 +62,55 @@
 		grid-area: media-text-media;
 		width: 100% !important;
 
+		// Moves the handle.
+		.components-resizable-box__side-handle {
+
+			&::after {
+				top: -7px;
+			}
+		}
+
 		// Moves the handles and creates a second one so we can manipulate the
 		// ResizableBox component with the content card over the middle of the image.
-		.components-resizable-box__handle-left,
-		.components-resizable-box__handle-right {
+		.components-resizable-box__handle-right:not(.components-resizable-box__side-handle) {
 			bottom: 0;
 			height: 100%;
-			top: 0;
-			z-index: 99;
+			top: -7px;
 
 			&::before {
 				position: absolute;
-				top: -7px;
-			}
-
-			&::after {
-				background: #0085ba;
-				border: 2px solid #fff;
-				border-radius: 50%;
-				bottom: -7px;
-				content: "";
-				cursor: inherit;
-				display: block;
-				height: 16px;
-				position: absolute;
-				width: 16px;
+				top: 0;
 			}
 		}
 	}
 
-	> .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
+	// Create a fake circular handle point.
+	&:not(.has-no-media) .wp-block-coblocks-media-card__media-container {
+
+		&::after {
+			background: theme(primary);
+			border: 2px solid $white;
+			border-radius: 50%;
+			bottom: -7px;
+			content: "";
+			cursor: inherit;
+			display: block;
+			height: 15px;
+			position: absolute;
+			width: 15px;
+			z-index: 9999;
+		}
+	}
+
+	&.is-style-left .wp-block-coblocks-media-card__media-container::after {
+		right: -8px;
+	}
+
+	&.is-style-right .wp-block-coblocks-media-card__media-container::after {
+		left: -7px;
+	}
+
+	> .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
 		max-width: 100%;
 	}
 
@@ -92,11 +119,15 @@
 	}
 
 	&.is-selected {
+
 		.editor-media-container__resizer .components-resizable-box__handle {
 			display: block;
 		}
-		@media (max-width: $break-small) {
+
+		@include break-small-max() {
+
 			&.is-stacked-on-mobile {
+
 				.editor-media-container__resizer .components-resizable-box__handle {
 					display: none;
 				}
@@ -104,16 +135,22 @@
 		}
 	}
 
-	@include break-small {
+	@include break-small-max() {
+
 		&.is-selected.is-style-right {
+
 			.editor-media-container__resizer .components-resizable-box__handle {
 				display: block;
 			}
 		}
 	}
-	@media (max-width: $break-small) {
+
+	@include break-small-max() {
+
 		&.is-stacked-on-mobile {
+
 			.wp-block-coblocks-media-card__wrapper {
+
 				.wp-block-coblocks-media-card__content {
 					margin-left: 5%;
 					margin-right: 5%;
@@ -124,7 +161,7 @@
 	}
 }
 
-.editor-block-list__block[data-type="coblocks/media-card"] {
+.wp-block[data-type="coblocks/media-card"] {
 	background: transparent !important;
 
 	.has-no-media .components-placeholder {
@@ -136,6 +173,7 @@
 
 	&[data-align="wide"],
 	&[data-align="full"] {
+
 		.has-no-media .components-placeholder {
 			max-height: 700px;
 		}
@@ -162,55 +200,48 @@
 	}
 
 	// Child blocks should not have a max-width.
-	.editor-inner-blocks .wp-block {
-		max-width: none;
+	.block-editor-inner-blocks .wp-block {
+		// max-width: none;
 	}
 
-	// Add border to the image if the block is selected.
-	&.is-selected .wp-block-coblocks-media-card__img-wrapper:not(.has-no-media) {
-		outline: 4px solid #0085ba;
+	.wp-block[data-type="coblocks/row"] .block-editor-block-mover {
+		display: none;
 	}
 
-	.wp-block[data-type="coblocks/row"] .editor-block-list__block-edit::before {
-		outline-style: solid !important;
-	}
-
-	// Remove image button.
-	.block-library-gallery-item__inline-menu {
-		right: -4px;
-		top: -4px;
-
-		.blocks-gallery-item__remove {
-			&:hover {
-				background-color: #0085ba !important;
-				box-shadow: none !important;
-				color: rgba($white, 0.66) !important;
-			}
-		}
-	}
-
-	// Fixes dropZone component z-index (#31).
 	.components-drop-zone {
 		z-index: 0;
 	}
 
 	// Remove editor margins that do not exist on the frontend.
 	.wp-block-coblocks-media-card__content {
-		> .editor-inner-blocks {
-			> .editor-block-list__layout {
+
+		[data-block] {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+
+		> .block-editor-inner-blocks {
+
+			> .block-editor-block-list__layout {
+
 				> .wp-block {
+
 					&:first-child {
-						> .editor-block-list__block-edit {
+
+						> .block-editor-block-list__block-edit {
 							margin-bottom: 0;
 							margin-top: 0;
 						}
-						> .editor-block-list__insertion-point {
+
+						> .block-editor-block-list__insertion-point {
 							display: none;
 						}
 					}
 				}
+
 				> div {
-					> .editor-default-block-appender {
+
+					> .block-editor-default-block-appender {
 						display: none;
 					}
 				}
@@ -221,7 +252,8 @@
 
 // Hide the wide and full alignment settings on the row.
 .wp-block-coblocks-media-card {
-	.editor-block-toolbar .components-toolbar:nth-child(2) {
+
+	.block-editor-block-toolbar .components-toolbar:nth-child(2) {
 		display: none;
 	}
 }
@@ -230,22 +262,33 @@
 	margin-bottom: 0.7em;
 }
 
-//Fix background color contrast issue
-body{
-	.editor-styles-wrapper {
-		.wp-block-coblocks-media-card {
-			&__content {
-				p,
-				a,
-				h1,
-				h2,
-				h3,
-				h4,
-				h5,
-				h6 {
-					color: inherit;
-				}
-			}
+// IE 10+ Support
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+	.wp-block-coblocks-media-card.is-style-right {
+		display: flex;
+		flex-grow: 1;
+
+		.components-resizable-box__container {
+			order: 2;
 		}
+
+		.wp-block-coblocks-media-card__content {
+			order: 1;
+			overflow: hidden;
+		}
+	}
+}
+
+// Shim to fix styles in the previewer.
+.block-editor-inserter__preview-content .wp-block-coblocks-media-card {
+
+	.block-editor-inserter {
+		display: none !important;
+	}
+
+	.wp-block-coblocks-media-card__media-container::after,
+	.components-resizable-box__side-handle {
+		display: none;
 	}
 }

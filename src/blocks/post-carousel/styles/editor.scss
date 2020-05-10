@@ -1,0 +1,29 @@
+.wp-block[data-type="coblocks/post-carousel"] {
+
+	.wp-block-coblocks-post-carousel__more-link {
+
+		&:focus {
+			box-shadow: none;
+			color: inherit;
+			outline: none;
+		}
+	}
+
+	.components-placeholder__fieldset {
+		flex-direction: column;
+	}
+
+	.editor-block-list__block-edit .components-placeholder__fieldset {
+		flex-direction: row;
+	}
+
+	.components-placeholder__cancel-button {
+		align-self: flex-start;
+		margin-top: 10px;
+	}
+}
+
+.wp-block-coblocks-post-carousel__image div {
+	padding-top: 100%;
+	width: 100%;
+}

@@ -1,0 +1,52 @@
+.components-coblocks-responsive__tabs {
+	align-items: center;
+	display: flex;
+	flex-direction: row-reverse;
+	position: relative;
+
+	.components-base-control,
+	.components-base-control__field {
+		margin-bottom: 0 !important;
+	}
+
+	.components-tab-panel__tab-content {
+		width: 100%;
+	}
+
+	&-item {
+		align-items: center;
+		appearance: none;
+		margin: 0;
+
+		&:first-of-type {
+			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;
+
+			&:not(.is-primary) {
+				border-right: none;
+			}
+		}
+
+		&:last-of-type {
+			border-bottom-left-radius: 0;
+			border-top-left-radius: 0;
+
+			&:not(.is-primary) {
+				border-left: none;
+			}
+		}
+
+		svg {
+			height: 15px;
+			width: 15px;
+		}
+	}
+
+	.components-tab-panel__tabs {
+		align-items: center;
+		display: flex;
+		margin-left: 8px;
+		position: relative;
+		top: 11px;
+	}
+}

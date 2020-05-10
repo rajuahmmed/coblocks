@@ -1,5 +1,5 @@
 .wp-block-coblocks-click-to-tweet {
-	border-radius: $accordion-border-radius;
+	border-radius: 4px;
 	margin-bottom: 1.9em;
 	position: relative;
 	border: 1px solid transparent;
@@ -29,13 +29,9 @@
 		}
 	}
 
-	&__twitter-btn:not(.has-button-color) {
-		background: $twitter;
-	}
-
 	&__twitter-btn {
 		appearance: none;
-		border-radius: $accordion-border-radius;
+		border-radius: 4px;
 		border: none;
 		box-shadow: none !important;
 		color: $white !important;
@@ -44,15 +40,18 @@
 		font-size: 13px;
 		font-style: normal;
 		font-weight: 400;
-		height: 34px;
-		line-height: 34px;
+		line-height: 1.8;
 		margin-left: 40px;
 		margin-top: 10px;
-		padding: 0 1em;
+		padding: 0.28em 1em;
 		position: relative;
 		text-decoration: none !important;
 		white-space: normal;
 		word-break: break-all;
+
+		&:not(.has-button-color) {
+			background: $color-twitter;
+		}
 
 		&::before {
 			background-color: $white;
@@ -65,27 +64,6 @@
 			position: relative;
 			top: 4px;
 			width: 18px;
-		}
-
-		&:active::before {
-			animation: pulse 200ms;
-			animation-timing-function: ease-out;
-			animation-fill-mode: none;
-		}
-	}
-
-	@keyframes pulse {
-
-		0% {
-			transform: scale(1);
-		}
-
-		15% {
-			transform: scale(0.9);
-		}
-
-		100% {
-			transform: scale(1);
 		}
 	}
 }

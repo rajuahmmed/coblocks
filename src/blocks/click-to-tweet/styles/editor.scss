@@ -1,5 +1,4 @@
-.editor-block-list__block[data-type="coblocks/click-to-tweet"] {
-
+.wp-block[data-type="coblocks/click-to-tweet"] {
 	// Resolves jumpy toolbar on input focus.
 	.components-toolbar {
 		transform: translate3d(0, 0, 0);
@@ -8,6 +7,10 @@
 
 .wp-block-coblocks-click-to-tweet {
 	margin: 0;
+
+	p.block-editor-rich-text__editable {
+		margin: 0;
+	}
 
 	a {
 		pointer-events: none;
@@ -28,9 +31,8 @@
 	}
 
 	&__via {
-		margin: 4px;
-		padding-top: 4px;
-		padding-bottom: 4px;
+		margin: 3px;
+		padding-left: 26px !important;
 	}
 
 	&__via-label {
@@ -38,34 +40,38 @@
 		display: flex;
 		flex-basis: 0;
 		font-size: 12px;
-		padding-left: 5px;
-		padding-right: 2px;
+		height: 36px;
+		left: 7px;
+		position: absolute;
 		white-space: nowrap;
 
 		svg {
-			position: relative;
-			top: 1px;
+			color: $dark-gray-500;
 		}
 	}
-}
 
-.has-fixed-toolbar {
+	&__via-wrapper {
+		position: relative;
+	}
 
-	.wp-block-coblocks-click-to-tweet {
+	//Top toolbar styling for the Twitter username field
+	.edit-post-header-toolbar__block-toolbar &__via {
+		border-color: $dark-gray-150;
+		border-radius: 3px;
+		box-shadow: 0 0 0 transparent;
+		margin: 4px;
+		padding-bottom: 3px;
+		padding-top: 3px;
 
-		&__via {
-			margin: 4px;
-		}
-
-		&__via-label {
-			align-items: center;
-			display: flex;
+		@media (min-width: 1080px) {
+			border-radius: 4px;
+			margin: 2px 4px;
+			padding-left: 28px !important;
 			padding-right: 4px;
-
-			svg {
-				position: relative;
-				top: 1px;
-			}
 		}
+	}
+
+	.edit-post-header-toolbar__block-toolbar &__via-label {
+		padding-left: 2px;
 	}
 }

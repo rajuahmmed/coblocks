@@ -1,10 +1,11 @@
 /**
  * Set the attributes for the text panel
+ *
  * @type {Object}
  */
 const TypographyAttributes = {
 	fontSize: {
-		type: 'number',
+		type: 'string',
 	},
 	customFontSize: {
 		type: 'number',

@@ -3,8 +3,8 @@
 	.gist {
 
 		&-file {
-			border-radius: $accordion-border-radius !important;
 			border-color: rgba(0, 0, 0, 0.125) !important;
+			border-radius: 4px !important;
 			margin-bottom: 0 !important;
 
 			a {
@@ -60,5 +60,9 @@
 		margin-bottom: 1em;
 		margin-top: 0.5em;
 		text-align: center;
+	}
+
+	table {
+		table-layout: auto;
 	}
 }

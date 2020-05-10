@@ -1,21 +1,16 @@
 /**
+ * Internal dependencies
+ */
+import { ALLOWED_BG_MEDIA_TYPES, BLOCKS_WITH_AUTOPADDING } from './';
+
+/**
  * WordPress dependencies
  */
-const { __ } = wp.i18n;
-const { Component, Fragment } = wp.element;
-const { mediaUpload } = wp.editor;
-const { DropZone } = wp.components;
+import { Component, Fragment } from '@wordpress/element';
+import { mediaUpload } from '@wordpress/editor';
+import { DropZone } from '@wordpress/components';
 
-/**
- * Allowed media
- */
-const ALLOWED_MEDIA_TYPES = [ 'image' ];
-
-/**
- * Gallery Drop Zone Component
- */
-class BackgroundImageDropZone extends Component {
-
+class BackgroundDropZone extends Component {
 	constructor() {
 		super( ...arguments );
 		this.addFile = this.addFile.bind( this );
@@ -24,7 +19,7 @@ class BackgroundImageDropZone extends Component {
 
 	addFile( files ) {
 		mediaUpload( {
-			allowedTypes: ALLOWED_MEDIA_TYPES,
+			allowedTypes: ALLOWED_BG_MEDIA_TYPES,
 			filesList: files,
 			onFileChange: ( [ media ] ) => this.onSelectFile( media ),
 		} );
@@ -32,11 +27,16 @@ class BackgroundImageDropZone extends Component {
 
 	onSelectFile( media ) {
 		if ( media && media.url ) {
-			this.props.setAttributes( { backgroundImg: media.url } );
+			let mediaType = 'image';
 
-			//set padding when image selected
-			if( [ 'coblocks/media-card' ].includes( this.props.name ) ){
-				if( !this.props.attributes.paddingSize || this.props.attributes.paddingSize == 'no' ){
+			if ( media.mime_type && media.mime_type.includes( 'video' ) ) {
+				mediaType = 'video';
+			}
+
+			this.props.setAttributes( { backgroundImg: media.url, backgroundType: mediaType } );
+			// Set padding when background image is added.
+			if ( BLOCKS_WITH_AUTOPADDING.includes( this.props.name ) ) {
+				if ( ! this.props.attributes.paddingSize || this.props.attributes.paddingSize === 'no' ) {
 					this.props.setAttributes( { paddingSize: 'medium' } );
 				}
 			}
@@ -44,15 +44,6 @@ class BackgroundImageDropZone extends Component {
 	}
 
 	render() {
-
-		const {
-			attributes,
-			className,
-			noticeOperations,
-			noticeUI,
-			label,
-		} = this.props;
-
 		return (
 			<Fragment>
 				<DropZone
@@ -64,4 +55,4 @@ class BackgroundImageDropZone extends Component {
 	}
 }
 
-export default BackgroundImageDropZone;
+export default BackgroundDropZone;

@@ -2,10 +2,7 @@
 /**
  * Load google fonts.
  *
- * @package   CoBlocks
- * @author    Rich Tabor & Jeffrey Carandang from CoBlocks
- * @link      https://coblocks.com
- * @license   http://opensource.org/licenses/gpl-2.0.php GNU Public License
+ * @package CoBlocks
  */
 
 // Exit if accessed directly.
@@ -30,27 +27,21 @@ class CoBlocks_Font_Loader {
 
 	/**
 	 * Registers the plugin.
+	 *
+	 * @return CoBlocks_Font_Loader
 	 */
 	public static function register() {
 		if ( null === self::$instance ) {
 			self::$instance = new CoBlocks_Font_Loader();
 		}
+
+		return self::$instance;
 	}
-
-	/**
-	 * The Plugin version.
-	 *
-	 * @var string $_version
-	 */
-	private $_version;
-
 
 	/**
 	 * The Constructor.
 	 */
-	private function __construct() {
-		$this->_version = COBLOCKS_VERSION;
-
+	public function __construct() {
 		add_action( 'wp_enqueue_scripts', array( $this, 'fonts_loader' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'fonts_loader' ) );
 	}
@@ -100,7 +91,7 @@ class CoBlocks_Font_Loader {
 						'coblocks-block-fonts',
 						add_query_arg( $query_args, '//fonts.googleapis.com/css' ),
 						array(),
-						$this->_version
+						COBLOCKS_VERSION
 					);
 
 					wp_enqueue_style( 'coblocks-block-fonts' );
